@@ -6,6 +6,9 @@
     <meta name="author" content="Jonathan Debuisson">
     <meta name="description" content="Plateforme Médicale & Psychométrique Clinique Multidisciplinaire — Création & Propriété de Jonathan Debuisson">
     <title>MediTrack Pro — Batterie Psychométrique Clinique (Jonathan Debuisson)</title>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1937995495450595"
+         crossorigin="anonymous"></script>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -230,7 +233,7 @@
                     <div class="space-y-2.5">
                         <h4 class="font-bold text-slate-900">2. Préparer sa consultation spécialisée</h4>
                         <p>Les auto-questionnaires constituent une première étape structurée d'auto-observation. Ils permettent de quantifier la fréquence et l'intensité de certains fonctionnements cognitifs et émotionnels dans la vie quotidienne ainsi que de manière rétrospective durant l'enfance.</p>
-                        <p>À l'issue des évaluations, la synthèse compilée dans votre dossier local ainsi que la version imprimable facilitent le dialogue avec un professionnel de la santé agréé (neuropsychologue, psychologue clinicien ou psychiatre) qui pourra, le cas échéant, réaliser un bilan diagnostique complet et standardisé.</p>
+                        <p>À l'issue des évaluations, la synthèse compilée dans votre dossier local ainsi que la version imprimable facilitent le dialogue avec un professionnel de la santé agréé (neuropsychologue, psychologue clinicien ou psychiatre) pourra, le cas échéant, réaliser un bilan diagnostique complet et standardisé.</p>
                     </div>
                 </div>
             </article>
@@ -1393,7 +1396,7 @@
                     { text: "5. Interprétation immédiate d'un silence ou d'un retard comme un désamour." },
                     { text: "6. Port d'une carapace de perfection pour se blinder contre la critique." },
                     { text: "7. Rumination mentale interminable sur une remarque perçue comme hostile." },
-                    { text: "8. Sentiment d'injustice absolue en cas de désaccord relationnel." },
+                    { text: "8. Sentiment d'absolue injustice en cas de désaccord relationnel." },
                     { text: "9. Autodénigrement instantané au premier obstacle social." },
                     { text: "10. Épuisement relationnel par peur constante de mal faire." }
                 ],
@@ -1512,7 +1515,6 @@
             }
         };
 
-        // ANNUAIRE BELGE STRUCTURÉ PAR CORPS DE MÉTIER ET RÉGION
         const BELGIAN_DIRECTORY = [
             { id: 'compsy_1', profession: 'psychologue', region: 'Bruxelles', name: 'Commission des Psychologues — Bruxelles', role: 'Annuaire officiel légal des psychologues cliniciens agréés', description: 'Recherche par commune et spécialité (TDAH, HPI, anxiété) à Bruxelles.', url: 'https://www.compsy.be/fr/psychologist/search', labelBtn: 'Voir sur Compsy ↗' },
             { id: 'compsy_2', profession: 'psychologue', region: 'Liège', name: 'Commission des Psychologues — Province de Liège', role: 'Annuaire officiel légal des psychologues cliniciens agréés', description: 'Trouvez un psychologue clinicien ou neuropsychologue agréé dans la région liégeoise.', url: 'https://www.compsy.be/fr/psychologist/search', labelBtn: 'Voir sur Compsy ↗' },
@@ -1971,7 +1973,6 @@
             container.innerHTML = resultsHTML + recommendationsHTML;
         }
 
-        // GESTION DES FILTRAGES DE L'ANNUAIRE BELGE
         function setDirectoryFilter(type, val) {
             if (type === 'prof') {
                 appState.dirFilterProf = val;
@@ -2085,7 +2086,6 @@
             closePatientModal();
             preparePrintReport();
 
-            // Ouvre la vue dédiée propre à l'écran
             document.getElementById('printable-page-view').classList.remove('hidden');
         }
 
@@ -2097,7 +2097,6 @@
             window.print();
         }
 
-        // MODALE LÉGALE & CONFIDENTIALITÉ GOOGLE ADSENSE
         function openLegalModal(type) {
             const titleEl = document.getElementById('legal-modal-title');
             const bodyEl = document.getElementById('legal-modal-body');
