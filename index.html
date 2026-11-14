@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="author" content="Jonathan Debuisson">
-    <meta name="description" content="Plateforme Psychométrique Clinique Multidisciplinaire — Création & Propriété de Jonathan Debuisson">
-    <title>PsychoTrack Pro — Batterie Psychométrique Clinique (Jonathan Debuisson)</title>
+    <meta name="description" content="Plateforme Médicale & Psychométrique Clinique Multidisciplinaire — Création & Propriété de Jonathan Debuisson">
+    <title>MediTrack Pro — Batterie Psychométrique Clinique (Jonathan Debuisson)</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -120,7 +120,7 @@
                 </div>
                 <div class="min-w-0 truncate">
                     <h1 class="font-bold text-base sm:text-lg leading-tight tracking-tight flex items-center gap-2 truncate">
-                        PsychoTrack Pro <span class="text-[10px] sm:text-xs bg-teal-500/20 text-teal-300 font-semibold px-2 py-0.5 rounded-full border border-teal-500/30 flex-shrink-0">Multidisciplinaire</span>
+                        MediTrack Pro <span class="text-[10px] sm:text-xs bg-teal-500/20 text-teal-300 font-semibold px-2 py-0.5 rounded-full border border-teal-500/30 flex-shrink-0">Multidisciplinaire</span>
                     </h1>
                     <p class="text-[11px] text-slate-400 truncate">
                         Batterie Psychométrique • <strong class="text-slate-300">Propriété & Création de Jonathan Debuisson</strong>
@@ -225,7 +225,7 @@
                     <div class="space-y-2.5">
                         <h4 class="font-bold text-slate-900">1. L'intérêt du croisement inter-pôles</h4>
                         <p>En psychologie clinique et en neuropsychologie moderne, un symptôme isolé ne suffit pas à poser une hypothèse fiable. Par exemple, des difficultés de concentration ou une agitation mentale peuvent relever d'un <strong>Trouble du Déficit de l'Attention avec ou sans Hyperactivité (TDAH)</strong>, mais aussi d'un <strong>Haut Potentiel Intellectuel (HPI)</strong>, d'un trouble anxieux généralisé ou d'une dette chronique de sommeil.</p>
-                        <p>La batterie <strong>PsychoTrack Pro</strong> permet d'explorer simultanément ces différentes dimensions à travers 25 échelles internationales reconnues (ASRS-v1.1 de l'OMS, WURS-25, AQ-10, épreuves inspirées des indices de la WAIS-IV, PHQ-9, GAD-7) afin de mettre en lumière d'éventuelles comorbidités ou profils de <em>double exceptionnalité (2e)</em>.</p>
+                        <p>La batterie <strong>MediTrack Pro</strong> permet d'explorer simultanément ces différentes dimensions à travers 25 échelles internationales reconnues (ASRS-v1.1 de l'OMS, WURS-25, AQ-10, épreuves inspirées des indices de la WAIS-IV, PHQ-9, GAD-7) afin de mettre en lumière d'éventuelles comorbidités ou profils de <em>double exceptionnalité (2e)</em>.</p>
                     </div>
                     <div class="space-y-2.5">
                         <h4 class="font-bold text-slate-900">2. Préparer sa consultation spécialisée</h4>
@@ -352,7 +352,7 @@
     <!-- FOOTER AVEC LIENS LÉGAUX POUR CONFORMITÉ GOOGLE ADSENSE -->
     <footer class="no-print bg-slate-900 text-slate-400 border-t border-slate-800 text-xs py-6 px-4 pb-36 lg:pb-6 text-center mt-auto">
         <div class="max-w-6xl mx-auto space-y-2.5">
-            <p class="font-bold text-slate-200">PsychoTrack Pro — Plateforme Psychométrique Clinique & Cognitive Multidisciplinaire</p>
+            <p class="font-bold text-slate-200">MediTrack Pro — Plateforme Psychométrique Clinique & Cognitive Multidisciplinaire</p>
             <div class="flex flex-wrap justify-center items-center gap-4 text-[11px] text-teal-400">
                 <button type="button" onclick="openLegalModal('privacy')" class="hover:underline">Politique de Confidentialité & Cookies</button>
                 <span class="text-slate-600">•</span>
@@ -541,7 +541,7 @@
                 </div>
 
                 <div class="pt-4 border-t border-slate-300 text-center text-[8pt] text-slate-500">
-                    Document officiel généré via PsychoTrack Pro • Conception & Propriété de Jonathan Debuisson
+                    Document officiel généré via MediTrack Pro • Conception & Propriété de Jonathan Debuisson
                 </div>
             </div>
         </div>
@@ -1550,17 +1550,17 @@
 
         function loadStateFromStorage() {
             try {
-                const stored = localStorage.getItem('psychotrack_pro_user_results_v4');
+                const stored = localStorage.getItem('meditrack_pro_user_results_v4');
                 if (stored) appState.savedResults = JSON.parse(stored);
-                const patient = localStorage.getItem('psychotrack_pro_patient_info_v4');
+                const patient = localStorage.getItem('meditrack_pro_patient_info_v4');
                 if (patient) appState.patientInfo = JSON.parse(patient);
             } catch(e) { console.error(e); }
         }
 
         function saveStateToStorage() {
             try {
-                localStorage.setItem('psychotrack_pro_user_results_v4', JSON.stringify(appState.savedResults));
-                localStorage.setItem('psychotrack_pro_patient_info_v4', JSON.stringify(appState.patientInfo));
+                localStorage.setItem('meditrack_pro_user_results_v4', JSON.stringify(appState.savedResults));
+                localStorage.setItem('meditrack_pro_patient_info_v4', JSON.stringify(appState.patientInfo));
                 updateUIBadges();
             } catch(e) { console.error(e); }
         }
@@ -2106,21 +2106,21 @@
             if (type === 'privacy') {
                 titleEl.innerText = "Politique de Confidentialité & Gestion des Cookies";
                 bodyEl.innerHTML = `
-                    <p><strong>1. Protection stricte de vos données psychométriques :</strong> PsychoTrack Pro applique une architecture dite <em>Local-First</em>. Toutes les réponses aux questionnaires, les scores calculés ainsi que l'identité renseignée pour l'impression sont stockés exclusivement dans la mémoire locale (<code>localStorage</code>) de votre propre navigateur. Aucune donnée clinique n'est transmise ni sauvegardée sur un serveur externe.</p>
+                    <p><strong>1. Protection stricte de vos données psychométriques :</strong> MediTrack Pro applique une architecture dite <em>Local-First</em>. Toutes les réponses aux questionnaires, les scores calculés ainsi que l'identité renseignée pour l'impression sont stockés exclusivement dans la mémoire locale (<code>localStorage</code>) de votre propre navigateur. Aucune donnée clinique n'est transmise ni sauvegardée sur un serveur externe.</p>
                     <p><strong>2. Cookies publicitaires & Google AdSense :</strong> Ce site est susceptible d'utiliser des services de diffusion d'annonces tiers (tels que Google AdSense) afin de financer son maintien gratuit. Ces partenaires peuvent utiliser des cookies ou des identifiants d'appareil pour diffuser des annonces pertinentes basées sur vos visites antérieures sur ce site ou sur d'autres sites web. Vous pouvez gérer ou désactiver la personnalisation des annonces à tout moment via les paramètres des annonces Google.</p>
                     <p><strong>3. Contrôle de vos données :</strong> Vous pouvez supprimer intégralement et définitivement vos résultats locaux à tout moment depuis l'onglet <em>Mon Dossier</em> via le bouton <strong>Effacer</strong>.</p>
                 `;
             } else if (type === 'about') {
                 titleEl.innerText = "À propos & Méthodologie Clinique";
                 bodyEl.innerHTML = `
-                    <p><strong>Conception & Propriété :</strong> PsychoTrack Pro est une plateforme psychométrique multidisciplinaire conçue et développée par <strong>Jonathan Debuisson</strong>.</p>
+                    <p><strong>Conception & Propriété :</strong> MediTrack Pro est une plateforme psychométrique multidisciplinaire conçue et développée par <strong>Jonathan Debuisson</strong>.</p>
                     <p><strong>Fondements scientifiques :</strong> Les 25 questionnaires intégrés s'inspirent d'échelles cliniques et cognitives internationales reconnues dans la littérature scientifique (ASRS-v1.1 de l'OMS, WURS-25, AQ-10, CAT-Q, DCDQ, subtests de raisonnement et de mémoire inspirés de la WAIS-IV, PHQ-9, MDQ, GAD-7, PCL-5, ISI, etc.).</p>
                     <p><strong>Objectif :</strong> Offrir un espace structuré de pré-évaluation et d'orientation permettant aux utilisateurs de mieux comprendre leur fonctionnement cognitif et émotionnel et de préparer leurs consultations auprès de professionnels agréés en Belgique et en francophonie.</p>
                 `;
             } else {
                 titleEl.innerText = "Avertissement Médical & Cadre d'Utilisation";
                 bodyEl.innerHTML = `
-                    <p><strong>Outil pré-diagnostique uniquement :</strong> Les résultats, indices estimatifs et synthèses générés par PsychoTrack Pro ont une vocation strictement informative, éducative et pré-diagnostique.</p>
+                    <p><strong>Outil pré-diagnostique uniquement :</strong> Les résultats, indices estimatifs et synthèses générés par MediTrack Pro ont une vocation strictement informative, éducative et pré-diagnostique.</p>
                     <p><strong>Absence de valeur médicale :</strong> Cet outil ne constitue en aucun cas un acte médical, un diagnostic clinique officiel ni une prescription. Seul un médecin psychiatre, un neurologue ou un neuropsychologue/psychologue clinicien habilité est en mesure de poser un diagnostic après une évaluation clinique complète en face à face.</p>
                     <p>En cas de détresse psychologique aiguë ou d'idées noires, contactez immédiatement un professionnel de santé ou les services d'urgence (112 en Europe / Centre de Prévention du Suicide au 0800 32 123 en Belgique).</p>
                 `;
