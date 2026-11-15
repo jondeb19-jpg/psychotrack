@@ -666,7 +666,7 @@
                 id: 'aq10', pole: 'neuro', poleName: '🧠 Neurodéveloppement', priorityTag: '★ Différentiel AuDHD #3',
                 title: 'AQ-10 (Dépistage Spectre Autistique)', shortTitle: 'AQ-10 Autisme/AuDHD',
                 description: 'Dépistage court du Quotient Autistique chez l’adulte (comorbidités et profil AuDHD).', estimatedTime: '3 min',
-                scaleOptions: [{ label: 'Tout à fait d’accord', val: 'agree' }, { label: 'Plutôt d’accord', val: 'agree' }, { label: 'Plutôt pas d’accord', val: 'disagree' }, { label: 'Pas du tout d’accord', val: 'disagree' }],
+                scaleOptions: [{ label: 'Tout à fait d’accord', val: 'agree_strong' }, { label: 'Plutôt d’accord', val: 'agree_slight' }, { label: 'Plutôt pas d’accord', val: 'disagree_slight' }, { label: 'Pas du tout d’accord', val: 'disagree_strong' }],
                 items: [
                     { text: "1. Je remarque souvent des détails infimes que les autres ne voient pas.", target: 'agree' },
                     { text: "2. Je préfère faire les choses avec d’autres plutôt que de les faire seul(e).", target: 'disagree' },
@@ -681,7 +681,7 @@
                 ],
                 evaluate: function(answers) {
                     let pts = 0;
-                    answers.forEach((v, idx) => { if (v === this.items[idx].target) pts++; });
+                    answers.forEach((v, idx) => { if (typeof v === 'string' && v.startsWith(this.items[idx].target)) pts++; });
                     const isPositive = pts >= 6;
                     return {
                         score: `${pts}/10`, rawScore: pts, isPositive: isPositive,
