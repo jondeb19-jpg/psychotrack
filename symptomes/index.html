@@ -1,674 +1,561 @@
 <!DOCTYPE html>
 <html lang="fr" class="h-full bg-slate-50 overflow-x-hidden">
 <head>
-    <meta property="og:title" content="MédiTrack Pro — Guide Clinique Exhaustif des Symptômes & Comorbidités" />
-    <meta property="og:description" content="Encyclopédie clinique complète des symptômes du TDAH et de ses comorbidités (TSA, HPI, Anxiété, RSD, Sommeil, Burnout)." />
-    <meta property="og:image" content="https://raw.githubusercontent.com/jondeb19-jpg/psychotrack/refs/heads/main/1794641139545.jpg" />
-    <meta property="og:url" content="https://www.meditrack.be/symptomes/" />
-    <meta property="og:type" content="website" />
-    <link rel="icon" type="image/png" href="/favicon-32x32.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="author" content="Jonathan Debuisson">
-    <meta name="description" content="Encyclopédie Clinique Exhaustive des Symptômes & Solutions — MediTrack Pro par Jonathan Debuisson">
-    <title>MediTrack Pro — Guide Exhaustif des Symptômes & Solutions (Jonathan Debuisson)</title>
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1937995495450595" crossorigin="anonymous"></script>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        doc: {
-                            50: '#eef2ff',
-                            100: '#e0e7ff',
-                            500: '#6366f1',
-                            600: '#4f46e5',
-                            700: '#4338ca',
-                            800: '#3730a3',
-                            900: '#312e81',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-                    },
-                    animation: {
-                        'marquee': 'marquee 30s linear infinite',
-                    },
-                    keyframes: {
-                        marquee: {
-                            '0%': { transform: 'translateX(0%)' },
-                            '100%': { transform: 'translateX(-50%)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        html, body {
-            max-width: 100vw;
-            overflow-x: hidden !important;
-            box-sizing: border-box;
-        }
-        *, *:before, *:after {
-            box-sizing: inherit;
-        }
-        a[href*="tiiny.host"], div[class*="tiiny"], iframe[src*="tiiny"] {
-            display: none !important;
-            visibility: hidden !important;
-            pointer-events: none !important;
-        }
-        ::-webkit-scrollbar {
-            width: 5px;
-            height: 5px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f5f9;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 9999px;
-        }
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
+<meta property="og:title" content="MédiTrack Pro — Guide Clinique des Symptômes & Solutions" />
+<meta property="og:description" content="Comprendre les symptômes neurodéveloppementaux, cognitifs et émotionnels ainsi que leurs approches thérapeutiques et non médicamenteuses." />
+<meta property="og:image" content="https://raw.githubusercontent.com/jondeb19-jpg/psychotrack/refs/heads/main/1794641139545.jpg" />
+<meta property="og:url" content="https://www.meditrack.be/symptomes/" />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="author" content="Jonathan Debuisson">
+<meta name="description" content="Encyclopédie Clinique des Symptômes & Solutions — MediTrack Pro par Jonathan Debuisson">
+<title>MediTrack Pro — Guide des Symptômes & Solutions (Jonathan Debuisson)</title>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1937995495450595" crossorigin="anonymous"></script>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+doc: {
+50: '#eef2ff',
+100: '#e0e7ff',
+500: '#6366f1',
+600: '#4f46e5',
+700: '#4338ca',
+800: '#3730a3',
+900: '#312e81',
+}
+},
+fontFamily: {
+sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+},
+animation: {
+'marquee': 'marquee 30s linear infinite',
+},
+keyframes: {
+marquee: {
+'0%': { transform: 'translateX(0%)' },
+'100%': { transform: 'translateX(-50%)' },
+}
+}
+}
+}
+}
+</script>
+<style>
+html, body {
+max-width: 100vw;
+overflow-x: hidden !important;
+box-sizing: border-box;
+}
+, :before, :after {
+box-sizing: inherit;
+}
+a[href="tiiny.host"], div[class="tiiny"], iframe[src="tiiny"] {
+display: none !important;
+visibility: hidden !important;
+pointer-events: none !important;
+}
+::-webkit-scrollbar {
+width: 5px;
+height: 5px;
+}
+::-webkit-scrollbar-track {
+background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+background: #cbd5e1;
+border-radius: 9999px;
+}
+.no-scrollbar::-webkit-scrollbar {
+display: none;
+}
+.no-scrollbar {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+</style>
 </head>
 <body class="h-full flex flex-col text-slate-800 antialiased bg-slate-50 selection:bg-indigo-100 selection:text-indigo-900 overflow-x-hidden min-w-0">
-
-    <!-- BANDEAU D'AVERTISSEMENT DÉFILANT -->
-    <div class="bg-slate-950 text-slate-400 text-[11px] h-7 overflow-hidden flex items-center border-b border-slate-800 relative z-50 select-none">
-        <div class="flex whitespace-nowrap animate-marquee items-center gap-12 font-medium tracking-wide">
-            <span class="flex items-center gap-2">
-                <span class="text-indigo-400">📖</span>
-                <span><strong>Encyclopédie Clinique Exhaustive :</strong> Fiches détaillées sur le TDAH, le spectre autistique (AuDHD), le HPI, les troubles anxieux, la RSD et les comorbidités • Ne remplace pas un avis médical.</span>
-            </span>
-            <span class="flex items-center gap-2">
-                <span class="text-indigo-400">📖</span>
-                <span><strong>Encyclopédie Clinique Exhaustive :</strong> Fiches détaillées sur le TDAH, le spectre autistique (AuDHD), le HPI, les troubles anxieux, la RSD et les comorbidités • Ne remplace pas un avis médical.</span>
-            </span>
-        </div>
-    </div>
-
-    <!-- EN-TÊTE PRINCIPAL (Harmonisé avec l'accueil) -->
-    <header class="bg-slate-900 text-white sticky top-0 z-40 shadow-md">
-        <div class="max-w-7xl mx-auto px-3 sm:px-6 py-2.5 flex items-center justify-between gap-2">
-            <a href="../index.html" class="flex items-center space-x-3 cursor-pointer min-w-0">
-                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-teal-500 via-emerald-400 to-cyan-500 flex items-center justify-center text-slate-950 font-black text-xl shadow-lg flex-shrink-0">
-                    Ψ
-                </div>
-                <div class="min-w-0 truncate">
-                    <h1 class="font-bold text-base sm:text-lg leading-tight tracking-tight flex items-center gap-2 truncate">
-                        MediTrack Pro <span class="text-[10px] sm:text-xs bg-teal-500/20 text-teal-300 font-semibold px-2 py-0.5 rounded-full border border-teal-500/30 flex-shrink-0">Multidisciplinaire</span>
-                    </h1>
-                    <p class="text-[11px] text-slate-400 truncate">
-                        Batterie Psychométrique • <strong class="text-slate-300">Jonathan Debuisson</strong>
-                    </p>
-                </div>
-            </a>
-
-            <!-- Nav Desktop -->
-            <nav class="hidden lg:flex items-center space-x-1 flex-shrink-0">
-                <a href="../index.html" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all text-slate-300 hover:text-white hover:bg-slate-800">
-                    📋 Questionnaires (25)
-                </a>
-                <a href="../index.html" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all text-slate-300 hover:text-white hover:bg-slate-800">
-                    🧠 Bilan & Corrélations
-                </a>
-                <a href="../index.html" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all text-slate-300 hover:text-white hover:bg-slate-800">
-                    🇧🇪 Annuaire & Réseau BE
-                </a>
-                <a href="../index.html" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all text-slate-300 hover:text-white hover:bg-slate-800 flex items-center gap-1.5">
-                    📂 Mon Dossier
-                </a>
-                <span class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all text-indigo-200 bg-indigo-950/80 border border-indigo-500/40 flex items-center gap-1.5 ml-1">
-                    📖 Symptômes & Solutions
-                </span>
-            </nav>
-
-            <div class="flex items-center space-x-2 flex-shrink-0">
-                <a href="../index.html" class="bg-teal-600 hover:bg-teal-500 text-white font-semibold text-xs px-3.5 py-2 rounded-xl transition shadow flex items-center gap-1.5">
-                    <span>← Retour aux Tests</span>
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- MAIN CONTAINER -->
-    <main class="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 py-5 pb-44 lg:pb-12 min-w-0 space-y-5">
-
-        <!-- EN-TÊTE DE SECTION & FILTRES -->
-        <section class="bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-slate-200 min-w-0">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
-                <div class="min-w-0">
-                    <div class="flex items-center gap-2 mb-1">
-                        <span class="text-[10px] font-bold uppercase tracking-wider text-indigo-700 bg-indigo-50 px-2.5 py-0.5 rounded-full border border-indigo-200">Encyclopédie Clinique Exhaustive</span>
-                    </div>
-                    <h2 class="text-lg sm:text-2xl font-bold text-slate-900">Guide Complet du TDAH et de ses Comorbidités</h2>
-                    <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Exploration approfondie de tous les symptômes cliniques, profils croisés (AuDHD, HPI), stratégies non médicamenteuses et orientations spécialisées.</p>
-                </div>
-                <div class="flex flex-wrap items-center gap-2 self-start md:self-auto w-full md:w-auto">
-                    <div class="relative w-full md:min-w-[260px]">
-                        <input type="text" id="symptom-search-input" oninput="filterSymptoms()" placeholder="🔍 Rechercher : inattention, impulsivité, autisme, RSD..." class="w-full pl-3 pr-3 py-2 bg-slate-100 border border-slate-300 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-                    </div>
-                </div>
-            </div>
-
-            <!-- FILTRES PAR PÔLE CLINIQUE ÉTENDU -->
-            <div class="flex items-center gap-1.5 overflow-x-auto pt-4 border-t border-slate-100 mt-4 no-scrollbar">
-                <button onclick="filterCategory('all')" id="cat-btn-all" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap bg-indigo-900 text-white">
-                    Toutes les fiches (14)
-                </button>
-                <button onclick="filterCategory('tdah')" id="cat-btn-tdah" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap bg-indigo-50 text-indigo-900 border border-indigo-200 hover:bg-indigo-100">
-                    🧠 Noyau TDAH (Inattention / Hyperactivité)
-                </button>
-                <button onclick="filterCategory('audhd')" id="cat-btn-audhd" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200">
-                    ⚡ AuDHD, HPI & Profils Croisés
-                </button>
-                <button onclick="filterCategory('emotion')" id="cat-btn-emotion" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200">
-                    💬 Régulation Émotionnelle & RSD
-                </button>
-                <button onclick="filterCategory('anxiety')" id="cat-btn-anxiety" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200">
-                    🛡️ Anxiété, TOC & Trauma (PCL-5)
-                </button>
-                <button onclick="filterCategory('sleep')" id="cat-btn-sleep" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200">
-                    🌙 Sommeil, Épuisement & Dissociation
-                </button>
-            </div>
-        </section>
-
-        <!-- BANDEAU INFO PÉDAGOGIQUE -->
-        <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-4 rounded-2xl shadow-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border border-indigo-900/60">
-            <div class="space-y-1">
-                <h3 class="font-bold text-sm text-indigo-300 flex items-center gap-1.5">
-                    <span>🧭</span><span>Navigation & Complémentarité</span>
-                </h3>
-                <p class="text-xs text-slate-300">Chaque fiche intègre les mécanismes neurobiologiques, les pistes thérapeutiques concrètes et le lien direct avec les 25 tests psychométriques de l'accueil.</p>
-            </div>
-            <a href="../index.html" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs px-3.5 py-2 rounded-xl transition flex-shrink-0 shadow">
-                Faire un pré-bilan complet →
-            </a>
-        </div>
-
-        <!-- EMPLACEMENT PUBLICITAIRE #1 -->
-        <div class="bg-slate-100/70 border border-slate-200/80 rounded-xl p-3 text-center">
-            <span class="block text-[9px] font-semibold uppercase tracking-widest text-slate-400 mb-1">Espace Partenaire • Publicité</span>
-            <div class="min-h-[60px] flex items-center justify-center text-xs text-slate-400">
-                <span>Emplacement réservé (Format Bannière Horizontale Responsive)</span>
-            </div>
-        </div>
-
-        <!-- GRILLE DES FICHES SYMPTÔMES EXHAUSTIVE -->
-        <div id="symptoms-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4 min-w-0"></div>
-
-        <!-- ARTICLE ÉDUCATIF DE SYNTHÈSE -->
-        <article class="bg-white p-5 sm:p-7 rounded-2xl shadow-sm border border-slate-200 space-y-4 text-slate-700">
-            <div class="border-b border-slate-100 pb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-full">Approche Clinique Intégrative</span>
-                <h3 class="text-lg sm:text-xl font-bold text-slate-900 mt-2">La complexité des profils croisés et des comorbidités</h3>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm leading-relaxed">
-                <div class="space-y-2">
-                    <h4 class="font-bold text-slate-900">1. Pourquoi le TDAH vient rarement seul</h4>
-                    <p>En neuropsychologie clinique, plus de 70 % des adultes présentant un TDAH manifestent au moins une comorbidité ou un profil neurodivergent associé (anxiété, spectre autistique, troubles du sommeil, douance intellectuelle). Cette superposition des traits peut masquer ou amplifier la souffrance psychique si elle n'est pas évaluée globalement.</p>
-                </div>
-                <div class="space-y-2">
-                    <h4 class="font-bold text-slate-900">2. L'importance du diagnostic différentiel</h4>
-                    <p>Des difficultés de concentration, de l'agitation ou une procrastination chronique peuvent provenir d'un TDAH, mais aussi d'un trouble anxieux généralisé, d'un épuisement professionnel (burnout) ou d'une dette de sommeil chronique. C'est tout l'intérêt d'une batterie multidisciplinaire croisée.</p>
-                </div>
-            </div>
-        </article>
-    </main>
-
-    <!-- MODALE DE FICHE DÉTAILLÉE (CORRIGÉE : MAX-H ET DÉFILEMENT INTERNE FLUIDE SANS DÉBORDER SUR MOBILE) -->
-    <div id="symptom-detail-modal" class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-[999] hidden flex items-center justify-center p-2 sm:p-4 no-print">
-        <div class="bg-white w-full max-w-3xl mx-auto rounded-2xl shadow-2xl flex flex-col max-h-[85vh] overflow-hidden border border-slate-200 my-auto">
-            <!-- En-tête du popup fixe -->
-            <div class="px-4 sm:px-6 py-3.5 bg-slate-900 text-white flex items-center justify-between flex-shrink-0 border-b border-indigo-900 gap-2">
-                <div class="min-w-0 pr-2">
-                    <span id="modal-symp-cat" class="text-[10px] font-bold text-indigo-300 uppercase tracking-wider block truncate">Catégorie</span>
-                    <h3 id="modal-symp-title" class="font-bold text-base sm:text-lg text-white truncate">Titre du symptôme</h3>
-                </div>
-                <button onclick="closeSymptomModal()" class="text-slate-400 hover:text-white px-3 py-1.5 rounded-lg bg-slate-800 transition text-xs font-bold flex-shrink-0">✕ Fermer</button>
-            </div>
-            <!-- Corps du popup scrollable -->
-            <div id="modal-symp-body" class="p-4 sm:p-6 overflow-y-auto space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed flex-1 min-w-0"></div>
-            <!-- Pied du popup fixe (toujours accessible sur mobile) -->
-            <div class="px-4 sm:px-6 py-3 bg-slate-100 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 flex-shrink-0">
-                <span id="modal-symp-test-hint" class="text-[11px] font-semibold text-slate-600 truncate">Échelle associée disponible sur MediTrack</span>
-                <div class="flex items-center gap-2 flex-shrink-0">
-                    <button onclick="closeSymptomModal()" class="px-3 py-2 rounded-xl text-xs font-semibold border border-slate-300 bg-white text-slate-700 hover:bg-slate-50">Fermer</button>
-                    <a href="../index.html" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-teal-600 hover:bg-teal-500 text-white shadow">Passer le test →</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="bg-slate-900 text-slate-400 border-t border-slate-800 text-xs py-6 px-4 pb-36 lg:pb-6 text-center mt-auto">
-        <div class="max-w-6xl mx-auto space-y-2">
-            <p class="font-bold text-slate-200">MediTrack Pro — Encyclopédie Clinique Exhaustive</p>
-            <p class="text-[11px] text-slate-400">Information éducative uniquement • Ne remplace pas une consultation médicale ou psychologique.</p>
-            <p class="text-slate-400 text-[11px]">Propriété exclusive et création originale de <strong>Jonathan Debuisson</strong>. Tous droits réservés.</p>
-        </div>
-    </footer>
-
-    <!-- NAVIGATION MOBILE -->
-    <div class="lg:hidden fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-800 z-30 px-2 py-2 flex justify-around shadow-2xl">
-        <a href="../index.html" class="flex flex-col items-center py-1 px-3 text-slate-400 hover:text-teal-400 font-medium text-[10px]">
-            <span class="text-base">📋</span>
-            <span>Tests (25)</span>
-        </a>
-        <a href="../index.html" class="flex flex-col items-center py-1 px-3 text-slate-400 hover:text-teal-400 font-medium text-[10px]">
-            <span class="text-base">🧠</span>
-            <span>Bilan Croisé</span>
-        </a>
-        <a href="../index.html" class="flex flex-col items-center py-1 px-3 text-slate-400 hover:text-teal-400 font-medium text-[10px]">
-            <span class="text-base">🇧🇪</span>
-            <span>Annuaire BE</span>
-        </a>
-        <a href="../index.html" class="flex flex-col items-center py-1 px-2 text-slate-400 hover:text-teal-400 font-medium text-[10px]">
-            <span class="text-base">📂</span>
-            <span>Dossier</span>
-        </a>
-        <span class="flex flex-col items-center py-1 px-2 text-indigo-400 font-bold text-[10px]">
-            <span class="text-base">📖</span>
-            <span>Symptômes</span>
-        </span>
-    </div>
-
-    <script>
-        const SYMPTOMS_DATA = [
-            {
-                id: 'inattention_tdah',
-                category: 'tdah',
-                categoryLabel: '🧠 Noyau TDAH',
-                title: 'Inattention & Déficit de focalisation (ASRS)',
-                shortDesc: 'Difficultés à soutenir l’effort mental sur les tâches routinières, étourderies fréquentes et pertes d’objets.',
-                relatedTests: 'ASRS-v1.1 (OMS) • WURS-25 Enfance',
-                specialist: 'Neuropsychologue / Psychiatre',
-                explanation: "L'inattention dans le TDAH n'est pas un manque de volonté, mais un déficit de régulation de l'attention sélective et soutenue lié à une sous-activation du cortex préfrontal. Le cerveau peine à filtrer les stimuli parasites et à maintenir l'engagement sur des tâches dépourvues de nouveauté ou de stimulation immédiate.",
-                nonMedSolutions: [
-                    "<strong>Externalisation de la mémoire :</strong> Utilisation de plannings visuels, alarmes multiples et carnets uniques de centralisation.",
-                    "<strong>Technique du Pomodoro ajusté :</strong> Segments de travail courts (15-20 min) suivis de pauses actives.",
-                    "<strong>Environnement épuré :</strong> Suppression des sources de distraction visuelle et auditive (casque à réduction de bruit)."
-                ],
-                medSolutions: [
-                    "Traitements psychostimulants (méthylphénidate, lisdexamfétamine) ou molécules non stimulantes (atomoxétine) prescrits par un médecin spécialiste pour restaurer la disponibilité dopaminergique."
-                ],
-                redFlags: "Une inattention d'apparition récente et brutale chez l'adulte doit faire éliminer une cause organique (neurologique, carentielle ou toxique)."
-            },
-            {
-                id: 'hyperactivite_impulsivite',
-                category: 'tdah',
-                categoryLabel: '🧠 Noyau TDAH',
-                title: 'Hyperactivité Motrice & Impulsivité Comportementale',
-                shortDesc: 'Agitation interne permanente, besoin de bouger, impatiences et tendance à couper la parole.',
-                relatedTests: 'ASRS-v1.1 • WURS-25',
-                specialist: 'Psychiatre / Neurologue',
-                explanation: "L'hyperactivité se manifeste souvent à l'âge adulte sous une forme intériorisée (agitation mentale, incapacité à se détendre) ou motrice (remuer les jambes, changer de position sans cesse). L'impulsivité entraîne des décisions hâtives, des achats impulsifs ou des interventions excessives en conversation.",
-                nonMedSolutions: [
-                    "<strong>Objets de décharge motrice (Fidgets) :</strong> Canalisent l'excès d'énergie physique discrètement en réunion ou en formation.",
-                    "<strong>Exercice physique quotidien :</strong> Indispensable pour métaboliser l'excès d'adrénaline et réguler le système nerveux.",
-                    "<strong>Règle de pause décisionnelle :</strong> Attendre 24 heures avant tout engagement financier ou professionnel important."
-                ],
-                medSolutions: [
-                    "Adaptation pharmacologique ciblée sur les symptômes d'impulsivité et d'agitation motrice sous contrôle médical strict."
-                ],
-                redFlags: "Une impulsivité extrême mettant en danger la sécurité physique ou financière nécessite une consultation psychiatrique urgente."
-            },
-            {
-                id: 'dysfonction_executive',
-                category: 'tdah',
-                categoryLabel: '🧠 Noyau TDAH',
-                title: 'Paralysie Exécutive & Procrastination Chronique',
-                shortDesc: 'Incapacité à initier l’action malgré l’urgence, saturation face aux tâches complexes à multi-étapes.',
-                relatedTests: 'ASRS-v1.1 • Échelle de Dyssynchronie',
-                specialist: 'Neuropsychologue / Coach TDAH',
-                explanation: "Le système exécutif cérébral ne parvient pas à hiérarchiser les priorités ni à découper mentalement une tâche en sous-objectifs. Résultat : le cerveau perçoit la tâche comme une montagne insurmontable, générant un blocage tétanisant.",
-                nonMedSolutions: [
-                    "<strong>Le micro-découpage ridicule :</strong> Réduire la première étape à sa plus simple expression (ex: 'ouvrir le document Word').",
-                    "<strong>Body Doubling :</strong> Travailler en binôme ou en présence d'une tierce personne pour stimuler l'engagement.",
-                    "<strong>Minuteurs visuels (Time Timer) :</strong> Concrétiser l'écoulement du temps pour réduire l'angoisse de la durée."
-                ],
-                medSolutions: [
-                    "Les traitements dopaminergiques aident à abaisser la barrière neurochimique à l'initiation de l'action."
-                ],
-                redFlags: "Si la paralysie s'accompagne d'une incapacité totale à subvenir à ses besoins de base, suspecter un effondrement dépressif majeur."
-            },
-            {
-                id: 'audhd_traits',
-                category: 'audhd',
-                categoryLabel: '⚡ AuDHD, HPI & Profils Croisés',
-                title: 'Comorbidité AuDHD (TDAH + Spectre Autistique)',
-                shortDesc: 'Tandis que le TDAH cherche la nouveauté, l’Autisme exige routine et prévisibilité, créant une tension interne.',
-                relatedTests: 'AQ-10 (Autisme) • ASRS (TDAH) • CAT-Q',
-                specialist: 'Centre de Référence Autisme (CRA) / Neuropsychologue',
-                explanation: "La coexistence du TDAH et du TSA (AuDHD) engendre un paradoxe quotidien : le besoin de chaos et de stimulation du TDAH entre en collision frontale avec le besoin d'ordre, de structure et d'invariance du profil autistique.",
-                nonMedSolutions: [
-                    "<strong>Aménagement de routines flexibles :</strong> Structurer les grandes lignes de la journée tout en acceptant des marges de flexibilité pour le TDAH.",
-                    "<strong>Gestion de la surcharge sensorielle :</strong> S'isoler régulièrement dans des environnements contrôlés.",
-                    "<strong>Psychoéducation croisée :</strong> Comprendre les besoins spécifiques de chaque versant de sa neurodivergence."
-                ],
-                medSolutions: [
-                    "Suivi spécialisé pour ajuster les traitements éventuels du TDAH sans exacerber l'anxiété ou l'hypersensibilité sensorielle autistique."
-                ],
-                redFlags: "Un épuisement global avec perte des compétences d'adaptation (burnout autistique) requiert un arrêt et un accompagnement spécialisé."
-            },
-            {
-                id: 'hpi_dyssynchronie',
-                category: 'audhd',
-                categoryLabel: '⚡ AuDHD, HPI & Profils Croisés',
-                title: 'HPI, Pensée en Arborescence & Dyssynchronie',
-                shortDesc: 'Vitesse intellectuelle fulgurante, sensibilité existentielle et décalage entre maturité mentale et affective.',
-                relatedTests: 'Échelle HPI • WAIS-IV (IRP, ICV, IMT, IVT) • Dyssynchronie',
-                specialist: 'Psychologue clinicien expert HPI / Neuropsychologue',
-                explanation: "Le Haut Potentiel Intellectuel (HPI) se caractérise par une pensée en réseau, une curiosité insatiable et une lucidité aiguë. La dyssynchronie (interne ou sociale) survient lorsque la vitesse de traitement cognitive dépasse la motricité ou la régulation émotionnelle.",
-                nonMedSolutions: [
-                    "<strong>Alimentation intellectuelle :</strong> S'investir dans des projets complexes ou des apprentissages stimulants pour nourrir le besoin cognitif.",
-                    "<strong>Ancrage corporel :</strong> Pratiquer des activités physiques pour redescendre du mental vers le corps.",
-                    "<strong>Pairs de pensée :</strong> Intégrer des réseaux ou groupes de partage partageant les mêmes sensibilités."
-                ],
-                medSolutions: [
-                    "Aucun traitement médicamenteux ne cible le HPI, mais le dépistage d'une comorbidité associée (TDAH, anxiété) est crucial en cas de souffrance."
-                ],
-                redFlags: "Un sentiment d'aliénation profond ou une dépression existentielle sévère justifie un soutien psychologique spécialisé."
-            },
-            {
-                id: 'rsd_rejection',
-                category: 'emotion',
-                categoryLabel: '💬 Régulation Émotionnelle & RSD',
-                title: 'Sensibilité Dysphorique au Rejet (RSD)',
-                shortDesc: 'Douleur émotionnelle intense et soudaine provoquée par la critique, le jugement ou l’oubli d’un proche.',
-                relatedTests: 'Échelle RSD • MSI-BPD (Borderline) • ECR-R',
-                specialist: 'Psychologue (TCC, Thérapie des Schémas, TCD)',
-                explanation: "Fréquente dans les profils TDAH et neurodivergents, la RSD active instantanément une souffrance ressentie physiquement (oppression, rage ou effondrement) suite à un rejet réel ou imaginé, poussant souvent au masquage excessif (people-pleasing).",
-                nonMedSolutions: [
-                    "<strong>La règle des 24 heures :</strong> S'interdire de réagir ou de surinterpréter un message perçu comme hostile avant une journée complète.",
-                    "<strong>Vérification objective des faits :</strong> Confronter l'émotion automatique à la réalité factuelle.",
-                    "<strong>Affirmation de soi :</strong> Travailler sur l'estime personnelle indépendamment du regard d'autrui."
-                ],
-                medSolutions: [
-                    "Sur avis médical spécialisé, certains traitements de fond du TDAH ou régulateurs de l'impulsivité peuvent atténuer la violence des pics émotionnels."
-                ],
-                redFlags: "Idées auto-agressives ou désespoir aigu lors des crises relationnelles nécessitant une prise en charge en urgence."
-            },
-            {
-                id: 'instabilite_emotionnelle',
-                category: 'emotion',
-                categoryLabel: '💬 Régulation Émotionnelle & RSD',
-                title: 'Dysrégulation Émotionnelle & Frustration',
-                shortDesc: 'Intolérance extrême à la moindre contrariété, colères subites suivies d’un retour rapide à la normale.',
-                relatedTests: 'MSI-BPD • Échelle RSD • GAD-7',
-                specialist: 'Psychiatre / Psychologue clinicien',
-                explanation: "En raison d'une immaturité des connexions entre le système limbique (siège des émotions) et le cortex préfrontal, les émotions ne sont pas modérées : elles arrivent d'un bloc, avec une intensité maximale.",
-                nonMedSolutions: [
-                    "<strong>Techniques de cooling-down :</strong> S'isoler dès les premiers signaux physiques de la colère (mâchoires serrées, poings fermés).",
-                    "<strong>Thérapie Comportementale Dialectique (TCD) :</strong> Apprentissage de compétences de tolérance à la détresse."
-                ],
-                medSolutions: [
-                    "Évaluation psychiatrique pour écarter ou traiter un trouble de l'humeur ou une labilité émotionnelle associée au TDAH."
-                ],
-                redFlags: "Passage à l'acte violent ou impulsif menaçant l'intégrité d'autrui ou de soi-même."
-            },
-            {
-                id: 'anxiete_generalisee',
-                category: 'anxiety',
-                categoryLabel: '🛡️ Anxiété, TOC & Trauma (PCL-5)',
-                title: 'Anxiété Généralisée & Anticipation Catastrophique',
-                shortDesc: 'Inquiétudes permanentes pour des détails du quotidien, rumination mentale et fatigue physique associée.',
-                relatedTests: 'GAD-7 (Anxiété) • SPIN-6 (Phobie Sociale)',
-                specialist: 'Médecin généraliste / Psychologue TCC / Psychiatre',
-                explanation: "Fréquente comorbidité du TDAH (souvent liée aux échecs passés, aux retards répétés et à la peur de commettre des erreurs), l'anxiété maintient le système nerveux en état d'alerte permanent.",
-                nonMedSolutions: [
-                    "<strong>Respiration en carrée ou soupir physiologique :</strong> Pour court-circuiter l'emballement sympathique.",
-                    "<strong>Le créneau d'inquiétude :</strong> 15 minutes dédiées par jour pour vider son sac de soucis, le reste du temps étant sanctuarisé."
-                ],
-                medSolutions: [
-                    "Traitement de fond par antidépresseurs sérotoninergiques (ISRS) si l'anxiété persiste malgré les aménagements et la psychothérapie."
-                ],
-                redFlags: "Attaques de panique à répétition ou agoraphobie invalidante."
-            },
-            {
-                id: 'toc_verifications',
-                category: 'anxiety',
-                categoryLabel: '🛡️ Anxiété, TOC & Trauma (PCL-5)',
-                title: 'Troubles Obsessionnels Compulsifs (TOC & Rituels)',
-                shortDesc: 'Pensées intrusives anxiogènes et rituels de vérification (portes, gaz, ordre) pour tenter de reprendre le contrôle.',
-                relatedTests: 'OCI-R (TOC) • PCL-5 (Trauma)',
-                specialist: 'Psychiatre / Psychologue spécialiste TCC',
-                explanation: "Les TOC peuvent coexister avec le TDAH ou le TSA, agissant comme une tentative désespérée de compenser le manque de mémoire de travail et le chaos interne par un surcroît de contrôle rigide.",
-                nonMedSolutions: [
-                    "<strong>Exposition avec prévention de la réponse (EPR) :</strong> Accompagné par un thérapeute TCC pour tolérer l'incertitude.",
-                    "<strong>Photo-témoin :</strong> Prendre en photo la porte verrouillée pour éviter de retourner vérifier 10 fois."
-                ],
-                medSolutions: [
-                    "Prescription d'ISRS à doses souvent plus élevées pour les TOC résistants."
-                ],
-                redFlags: "Obsessions invalidantes paralysant totalement le fonctionnement social ou professionnel."
-            },
-            {
-                id: 'stress_post_traumatique',
-                category: 'anxiety',
-                categoryLabel: '🛡️ Anxiété, TOC & Trauma (PCL-5)',
-                title: 'Stress Post-Traumatique (TSPT / PCL-5)',
-                shortDesc: 'Reviviscences, cauchemars, hypervigilance et sursauts exagérés suite à des vécus d’invalidation ou de trauma.',
-                relatedTests: 'PCL-5 (Trauma) • EMDR-Belgium',
-                specialist: 'Psychothérapeute certifié EMDR / Psychiatre',
-                explanation: "Les personnes neurodivergentes subissent statistiquement plus de micro-traumatismes répétés (harcèlement scolaire, brimades, sentiment d'inadéquation chronique), favorisant l'émergence de symptômes de stress post-traumatique.",
-                nonMedSolutions: [
-                    "<strong>Thérapie EMDR ou Somatic Experiencing :</strong> Pour retraiter les souvenirs traumatiques stockés au niveau somatique.",
-                    "<strong>Sécurité sensorielle :</strong> Créer des sanctuaires physiques apaisants."
-                ],
-                medSolutions: [
-                    "Prise en charge psychiatrique et psychothérapeutique spécialisée dans le psychotrauma."
-                ],
-                redFlags: "Flash-backs invalidants, dissociation sévère ou conduites à risque suicidaire."
-            },
-            {
-                id: 'insomnie_retard_phase',
-                category: 'sleep',
-                categoryLabel: '🌙 Sommeil, Épuisement & Dissociation',
-                title: 'Insomnie d’Endormissement & Retard de Phase Circadien',
-                shortDesc: 'Incapacité à trouver le sommeil avant une heure avancée de la nuit, regain d’énergie vespéral.',
-                relatedTests: 'ISI (Insomnie) • Échelle d’Epworth',
-                specialist: 'Médecin du sommeil / Neurologue',
-                explanation: "Le pic de mélatonine est naturellement décalé chez un grand nombre de personnes TDAH, entraînant un rythme biologique en opposition totale avec les horaires socioprofessionnels classiques.",
-                nonMedSolutions: [
-                    "<strong>Luminothérapie matinale :</strong> Exposition forte à la lumière du jour dès le réveil.",
-                    "<strong>Coupure stricte des écrans :</strong> 1h30 avant l'heure visée de coucher."
-                ],
-                medSolutions: [
-                    "Utilisation de mélatonine exogène à libération contrôlée ou immédiate selon prescription médicale."
-                ],
-                redFlags: "Suspicion d'apnée du sommeil (ronflements, étouffements nocturnes, somnolence diurne extrême au volant)."
-            },
-            {
-                id: 'burnout_autistique_professionnel',
-                category: 'sleep',
-                categoryLabel: '🌙 Sommeil, Épuisement & Dissociation',
-                title: 'Burnout Professionnel & Épuisement Autistique',
-                shortDesc: 'Effondrement physique et mental suite à des années de compensation et de masquage.',
-                relatedTests: 'MBI-GS (Burnout) • PHQ-9 (Dépression)',
-                specialist: 'Médecin traitant / Médecin du travail / Psychologue',
-                explanation: "L'épuisement extrême survient lorsque les exigences de l'environnement dépassent durablement les ressources disponibles, brisant les mécanismes de camouflage.",
-                nonMedSolutions: [
-                    "<strong>Retrait des exigences superflues :</strong> Stopper toutes les activités non vitales pour préserver l'énergie restante.",
-                    "<strong>Repos sensoriel et cognitif absolu.</strong>"
-                ],
-                medSolutions: [
-                    "Arrêt de travail prolongé et suivi thérapeutique global."
-                ],
-                redFlags: "Idées noires persistantes ou perte totale de contact avec la réalité."
-            },
-            {
-                id: 'dissociation_alexithymie',
-                category: 'sleep',
-                categoryLabel: '🌙 Sommeil, Épuisement & Dissociation',
-                title: 'Dissociation & Alexithymie (Déconnexion Corporelle)',
-                shortDesc: 'Difficulté à nommer ses émotions, impression de se regarder vivre de l’extérieur sous stress.',
-                relatedTests: 'TAS-12 (Alexithymie) • DES-B (Dissociation)',
-                specialist: 'Psychologue clinicien (EMDR / Thérapie somatique)',
-                explanation: "Mécanisme de défense du système nerveux face à une surcharge émotionnelle ou sensorielle trop violente, entraînant une coupure entre le corps et l'esprit.",
-                nonMedSolutions: [
-                    "<strong>Ancrage sensoriel 5-4-3-2-1 :</strong> Revenir aux sens physiques.",
-                    "<strong>Roue des émotions :</strong> Réapprendre à associer sensations physiques et mots."
-                ],
-                medSolutions: [
-                    "Psychothérapie spécialisée dans l'intégration somatique du trauma."
-                ],
-                redFlags: "Pertes de mémoire dissociatives ou amnésies temporaires."
-            },
-            {
-                id: 'addictions_compulsions',
-                category: 'tdah',
-                categoryLabel: '🧠 Noyau TDAH',
-                title: 'Addictions, Substances & Compulsions Numériques',
-                shortDesc: 'Usage à risque d’alcool, de cannabis, de caféine ou hyperconnexion aux écrans en quête de dopamine rapide.',
-                relatedTests: 'AUDIT-C / DAST-10 (Addictions) • ASRS',
-                specialist: 'Addictologue / Psychiatre / Centre spécialisé',
-                explanation: "En quête constante de régulation dopaminergique pour apaiser l'agitation ou le vide intérieur, le cerveau TDAH présente une vulnérabilité accrue aux conduites addictives et aux hyper-stimulations numériques.",
-                nonMedSolutions: [
-                    "<strong>Blocage des applications dopaminergiques :</strong> Utilisation de logiciels de contrôle parental ou de coupure d'internet sur smartphone.",
-                    "<strong>Substitution saine :</strong> Canalisations par le sport intense ou des activités créatives stimulantes."
-                ],
-                medSolutions: [
-                    "Prise en charge en addictologie couplée au traitement du TDAH de fond (le traitement adapté du TDAH réduit significativement l'impulsivité addictive)."
-                ],
-                redFlags: "Dépendance physique sévère, sevrage à risque ou mise en danger financière et sociale."
-            }
-        ];
-
-        let currentCategory = 'all';
-        let currentQuery = '';
-
-        function filterCategory(cat) {
-            currentCategory = cat;
-            document.querySelectorAll('.cat-filter-btn').forEach(btn => {
-                btn.classList.remove('bg-indigo-900', 'text-white');
-                if (btn.id === 'cat-btn-tdah') {
-                    btn.classList.add('bg-indigo-50', 'text-indigo-900');
-                } else {
-                    btn.classList.add('bg-slate-100', 'text-slate-700');
-                }
-            });
-            const active = document.getElementById(`cat-btn-${cat}`);
-            if (active) {
-                active.classList.remove('bg-slate-100', 'text-slate-700', 'bg-indigo-50', 'text-indigo-900');
-                active.classList.add('bg-indigo-900', 'text-white');
-            }
-            renderSymptomsGrid();
-        }
-
-        function filterSymptoms() {
-            const el = document.getElementById('symptom-search-input');
-            currentQuery = el ? el.value.toLowerCase().trim() : '';
-            renderSymptomsGrid();
-        }
-
-        function renderSymptomsGrid() {
-            const grid = document.getElementById('symptoms-grid');
-            if (!grid) return;
-            grid.innerHTML = '';
-
-            const filtered = SYMPTOMS_DATA.filter(s => {
-                const matchCat = currentCategory === 'all' || s.category === currentCategory;
-                const matchText = !currentQuery ||
-                    s.title.toLowerCase().includes(currentQuery) ||
-                    s.shortDesc.toLowerCase().includes(currentQuery) ||
-                    s.explanation.toLowerCase().includes(currentQuery) ||
-                    s.relatedTests.toLowerCase().includes(currentQuery);
-                return matchCat && matchText;
-            });
-
-            if (filtered.length === 0) {
-                grid.innerHTML = `<div class="col-span-full py-10 text-center text-slate-400 text-xs bg-white rounded-2xl border border-slate-200">Aucune fiche symptôme ne correspond à votre recherche.</div>`;
-                return;
-            }
-
-            filtered.forEach(s => {
-                const card = document.createElement('div');
-                card.className = "bg-white rounded-2xl p-4 sm:p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-indigo-300 transition flex flex-col justify-between group";
-                card.innerHTML = `
-                    <div class="space-y-2.5">
-                        <div class="flex items-center justify-between gap-2">
-                            <span class="text-[10px] font-bold uppercase tracking-wider text-indigo-900 bg-indigo-50 border border-indigo-100 px-2.5 py-0.5 rounded-full truncate">${s.categoryLabel}</span>
-                            <span class="text-[10px] font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded flex-shrink-0">Fiche clinique</span>
-                        </div>
-                        <h4 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-indigo-700 transition">${s.title}</h4>
-                        <p class="text-xs text-slate-600 leading-relaxed">${s.shortDesc}</p>
-                        <div class="pt-1 flex flex-wrap gap-1.5">
-                            <span class="text-[10px] font-medium text-teal-800 bg-teal-50 border border-teal-200 px-2 py-0.5 rounded-md">📋 Tests liés : ${s.relatedTests}</span>
-                        </div>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
-                        <span class="text-[11px] text-slate-500 truncate">👩‍⚕️ ${s.specialist}</span>
-                        <button onclick="openSymptomModal('${s.id}')" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs px-3.5 py-2 rounded-xl transition shadow-sm flex-shrink-0">
-                            Lire la fiche →
-                        </button>
-                    </div>
-                `;
-                grid.appendChild(card);
-            });
-        }
-
-        function openSymptomModal(id) {
-            const symp = SYMPTOMS_DATA.find(s => s.id === id);
-            if (!symp) return;
-
-            document.getElementById('modal-symp-cat').innerText = symp.categoryLabel;
-            document.getElementById('modal-symp-title').innerText = symp.title;
-            document.getElementById('modal-symp-test-hint').innerText = `Tests associés : ${symp.relatedTests}`;
-
-            const nonMedList = symp.nonMedSolutions.map(item => `<li class="flex items-start gap-2"><span class="text-indigo-600 font-bold mt-0.5">✓</span><span>${item}</span></li>`).join('');
-            const medList = symp.medSolutions.map(item => `<p>${item}</p>`).join('');
-
-            document.getElementById('modal-symp-body').innerHTML = `
-                <div class="p-3.5 rounded-xl bg-indigo-50/70 border border-indigo-200 space-y-1">
-                    <h4 class="font-bold text-indigo-950 text-xs sm:text-sm uppercase tracking-wide">1. Mécanisme Clinique</h4>
-                    <p class="text-slate-800">${symp.explanation}</p>
-                </div>
-
-                <div class="p-3.5 rounded-xl bg-white border border-slate-200 space-y-2 shadow-sm">
-                    <h4 class="font-bold text-slate-900 text-xs sm:text-sm uppercase tracking-wide flex items-center gap-1.5">
-                        <span>🌿</span><span>2. Stratégies Non Médicamenteuses</span>
-                    </h4>
-                    <ul class="space-y-1.5 text-slate-700">${nonMedList}</ul>
-                </div>
-
-                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
-                    <h4 class="font-bold text-slate-900 text-xs sm:text-sm uppercase tracking-wide flex items-center gap-1.5">
-                        <span>⚕️</span><span>3. Approches Médicales & Traitements</span>
-                    </h4>
-                    <div class="text-slate-700">${medList}</div>
-                </div>
-
-                <div class="p-3.5 rounded-xl bg-amber-50 border border-amber-300 space-y-1">
-                    <h4 class="font-bold text-amber-950 text-xs uppercase tracking-wide flex items-center gap-1.5">
-                        <span>⚠️</span><span>4. Signes d'alerte & Spécialiste</span>
-                    </h4>
-                    <p class="text-amber-900 text-xs">${symp.redFlags}</p>
-                    <p class="text-amber-950 font-semibold text-xs pt-1">Interlocuteur recommandé : ${symp.specialist}</p>
-                </div>
-            `;
-
-            document.getElementById('symptom-detail-modal').classList.remove('hidden');
-        }
-
-        function closeSymptomModal() {
-            document.getElementById('symptom-detail-modal').classList.add('hidden');
-        }
-
-        window.addEventListener('DOMContentLoaded', () => {
-            renderSymptomsGrid();
-        });
-    </script>
+​<!-- BANDEAU D'AVERTISSEMENT DÉFILANT -->
+<div class="bg-slate-950 text-slate-400 text-[11px] h-7 overflow-hidden flex items-center border-b border-slate-800 relative z-50 select-none">
+<div class="flex whitespace-nowrap animate-marquee items-center gap-12 font-medium tracking-wide">
+<span class="flex items-center gap-2">
+<span class="text-indigo-400">📖</span>
+<span><strong>Base Documentaire Clinique :</strong> Fiches explicatives sur les mécanismes des symptômes et leurs pistes de prise en charge (médicamenteuses et non médicamenteuses) • Ne remplace pas un avis médical.</span>
+</span>
+<span class="flex items-center gap-2">
+<span class="text-indigo-400">📖</span>
+<span><strong>Base Documentaire Clinique :</strong> Fiches explicatives sur les mécanismes des symptômes et leurs pistes de prise en charge (médicamenteuses et non médicamenteuses) • Ne remplace pas un avis médical.</span>
+</span>
+</div>
+</div>
+​<!-- EN-TÊTE PRINCIPAL (Aligné avec la page principale) -->
+<header class="bg-slate-900 text-white sticky top-0 z-40 shadow-md border-b border-indigo-950/80">
+<div class="max-w-7xl mx-auto px-3 sm:px-6 py-2.5 flex items-center justify-between gap-2">
+<a href="../index.html" class="flex items-center space-x-3 cursor-pointer min-w-0">
+<div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 via-blue-400 to-sky-400 flex items-center justify-center text-slate-950 font-black text-xl shadow-lg flex-shrink-0">
+Ψ
+</div>
+<div class="min-w-0 truncate">
+<h1 class="font-bold text-base sm:text-lg leading-tight tracking-tight flex items-center gap-2 truncate">
+MediTrack Pro <span class="text-[10px] sm:text-xs bg-indigo-500/20 text-indigo-300 font-semibold px-2 py-0.5 rounded-full border border-indigo-500/30 flex-shrink-0">Base Clinique</span>
+</h1>
+<p class="text-[11px] text-slate-400 truncate">
+Documentation Symptômes & Solutions • <strong class="text-slate-300">Jonathan Debuisson</strong>
+</p>
+</div>
+</a>
+​<!-- Nav Desktop (Identique à la page principale) -->
+<nav class="hidden lg:flex items-center space-x-1 flex-shrink-0">
+<a href="../index.html" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all text-slate-300 hover:text-white hover:bg-slate-800 flex items-center gap-1">
+<span>📋</span><span>Tests (25)</span>
+</a>
+<span class="px-3.5 py-1.5 rounded-lg text-xs font-semibold text-white bg-indigo-950 border border-indigo-600/50 flex items-center gap-1 shadow-inner">
+<span>📖</span><span>Symptômes</span>
+</span>
+<a href="../index.html#synthese" onclick="openSynthesisModal()" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all text-slate-300 hover:text-white hover:bg-slate-800 flex items-center gap-1">
+<span>📊</span><span>Synthèse</span>
+</a>
+<a href="../index.html#comparatif" onclick="openComparatifModal()" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all text-slate-300 hover:text-white hover:bg-slate-800 flex items-center gap-1">
+<span>⚖️</span><span>Profils</span>
+</a>
+<a href="../index.html#journal" onclick="openJournalModal()" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all text-slate-300 hover:text-white hover:bg-slate-800 flex items-center gap-1">
+<span>📓</span><span>Journal</span>
+</a>
+<a href="../index.html#export" onclick="openExportModal()" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all text-slate-300 hover:text-white hover:bg-slate-800 flex items-center gap-1">
+<span>📁</span><span>Rapport</span>
+</a>
+<a href="../index.html#ressources" onclick="openResourcesModal()" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all text-slate-300 hover:text-white hover:bg-slate-800 flex items-center gap-1">
+<span>🔗</span><span>Urgences</span>
+</a>
+</nav>
+​<div class="flex items-center space-x-2 flex-shrink-0">
+<a href="../index.html" class="bg-teal-600 hover:bg-teal-500 text-white font-semibold text-xs px-3.5 py-2 rounded-xl transition shadow flex items-center gap-1.5">
+<span>← Retour aux Tests</span>
+</a>
+</div>
+</div>
+</header>
+​<!-- MAIN CONTAINER -->
+<main class="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 py-5 pb-28 lg:pb-12 min-w-0 space-y-5">
+​<!-- EN-TÊTE DE SECTION & FILTRES -->
+<section class="bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-slate-200 min-w-0">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
+<div class="min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-[10px] font-bold uppercase tracking-wider text-indigo-700 bg-indigo-50 px-2.5 py-0.5 rounded-full border border-indigo-200">Espace Éducatif & Clinique</span>
+</div>
+<h2 class="text-lg sm:text-2xl font-bold text-slate-900">Comprendre les Symptômes & Explorer les Solutions</h2>
+<p class="text-xs sm:text-sm text-slate-600 mt-0.5">Mécanismes neurobiologiques, stratégies non médicamenteuses validées, options médicales et orientation vers les praticiens.</p>
+</div>
+<div class="flex flex-wrap items-center gap-2 self-start md:self-auto w-full md:w-auto">
+<div class="relative w-full md:min-w-[260px]">
+<input type="text" id="symptom-search-input" oninput="filterSymptoms()" placeholder="🔍 Rechercher : attention, sommeil, anxiété, rejet..." class="w-full pl-3 pr-3 py-2 bg-slate-100 border border-slate-300 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+</div>
+</div>
+</div>
+​<!-- FILTRES PAR PÔLE -->
+<div class="flex items-center gap-1.5 overflow-x-auto pt-4 border-t border-slate-100 mt-4 no-scrollbar">
+<button onclick="filterCategory('all')" id="cat-btn-all" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap bg-indigo-900 text-white">
+Toutes les fiches (10)
+</button>
+<button onclick="filterCategory('neuro')" id="cat-btn-neuro" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap bg-indigo-50 text-indigo-900 border border-indigo-200 hover:bg-indigo-100">
+🧠 Fonctions Exécutives & TDAH
+</button>
+<button onclick="filterCategory('sensory')" id="cat-btn-sensory" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200">
+⚡ Sensorialité & Camouflage (TSA/HPI)
+</button>
+<button onclick="filterCategory('emotion')" id="cat-btn-emotion" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200">
+💬 Régulation Émotionnelle & Anxiété
+</button>
+<button onclick="filterCategory('sleep')" id="cat-btn-sleep" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200">
+🌙 Sommeil & Énergie
+</button>
+</div>
+</section>
+​<!-- BANDEAU INFO PÉDAGOGIQUE -->
+<div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-4 rounded-2xl shadow-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border border-indigo-900/60">
+<div class="space-y-1">
+<h3 class="font-bold text-sm text-indigo-300 flex items-center gap-1.5">
+<span>🧭</span><span>Comment utiliser cette base documentaire ?</span>
+</h3>
+<p class="text-xs text-slate-300">Cliquez sur une fiche pour consulter l'explication clinique, les solutions non médicamenteuses concrètes, les approches médicales existantes et le questionnaire MediTrack associé.</p>
+</div>
+<a href="../index.html" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs px-3.5 py-2 rounded-xl transition flex-shrink-0 shadow">
+Faire un pré-bilan →
+</a>
+</div>
+​<!-- EMPLACEMENT PUBLICITAIRE #1 -->
+<div class="bg-slate-100/70 border border-slate-200/80 rounded-xl p-3 text-center">
+<span class="block text-[9px] font-semibold uppercase tracking-widest text-slate-400 mb-1">Espace Partenaire • Publicité</span>
+<div class="min-h-[60px] flex items-center justify-center text-xs text-slate-400">
+<span>Emplacement réservé (Format Bannière Horizontale Responsive)</span>
+</div>
+</div>
+​<!-- GRILLE DES FICHES SYMPTÔMES -->
+<div id="symptoms-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4 min-w-0"></div>
+​<!-- ARTICLE ÉDUCATIF DE SYNTHÈSE (SEO & ADSENSE) -->
+<article class="bg-white p-5 sm:p-7 rounded-2xl shadow-sm border border-slate-200 space-y-4 text-slate-700">
+<div class="border-b border-slate-100 pb-3">
+<span class="text-[10px] font-bold uppercase tracking-wider text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-full">Approche Intégrative</span>
+<h3 class="text-lg sm:text-xl font-bold text-slate-900 mt-2">Pourquoi associer stratégies comportementales et suivi médical ?</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm leading-relaxed">
+<div class="space-y-2">
+<h4 class="font-bold text-slate-900">1. Les leviers non médicamenteux</h4>
+<p>Qu'il s'agisse d'un trouble attentionnel, d'anxiété ou de troubles du sommeil, les aménagements environnementaux, la thérapie cognitivo-comportementale (TCC), l'hygiène circadienne et la psychoéducation constituent le socle de toute prise en charge durable. Ils réduisent la charge mentale quotidienne et préviennent l'épuisement.</p>
+</div>
+<div class="space-y-2">
+<h4 class="font-bold text-slate-900">2. Le rôle de l'évaluation médicale</h4>
+<p>Lorsque l'impact fonctionnel reste élevé malgré les adaptations du quotidien, un médecin spécialiste (psychiatre, neurologue ou médecin du sommeil) peut évaluer la pertinence d'un traitement pharmacologique ciblé, toujours encadré par un diagnostic précis et un suivi régulier.</p>
+</div>
+</div>
+</article>
+</main>
+​<!-- MODALE DE FICHE DÉTAILLÉE -->
+<div id="symptom-detail-modal" class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-[999] hidden flex items-center justify-center p-2 sm:p-4 overflow-y-auto">
+<div class="bg-white w-full max-w-3xl mx-auto rounded-2xl shadow-2xl flex flex-col max-h-[88vh] overflow-hidden border border-slate-200 my-auto">
+<div class="px-4 sm:px-6 py-4 bg-slate-900 text-white flex items-center justify-between flex-shrink-0 border-b border-indigo-900">
+<div class="min-w-0 pr-3">
+<span id="modal-symp-cat" class="text-[10px] font-bold text-indigo-300 uppercase tracking-wider block">Catégorie</span>
+<h3 id="modal-symp-title" class="font-bold text-base sm:text-xl text-white truncate">Titre du symptôme</h3>
+</div>
+<button onclick="closeSymptomModal()" class="text-slate-400 hover:text-white px-3 py-1.5 rounded-lg bg-slate-800 transition text-xs font-bold flex-shrink-0">✕ Fermer</button>
+</div>
+<div id="modal-symp-body" class="p-4 sm:p-6 overflow-y-auto space-y-5 text-xs sm:text-sm text-slate-700 leading-relaxed"></div>
+<div class="px-4 sm:px-6 py-3 bg-slate-100 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 flex-shrink-0">
+<span id="modal-symp-test-hint" class="text-xs font-semibold text-slate-600">Échelle associée disponible sur MediTrack</span>
+<div class="flex items-center gap-2">
+<button onclick="closeSymptomModal()" class="px-3.5 py-2 rounded-xl text-xs font-semibold border border-slate-300 bg-white text-slate-700 hover:bg-slate-50">Fermer</button>
+<a href="../index.html" class="px-4 py-2 rounded-xl text-xs font-bold bg-teal-600 hover:bg-teal-500 text-white shadow">Passer le test sur MediTrack →</a>
+</div>
+</div>
+</div>
+</div>
+​<!-- FOOTER -->
+<footer class="bg-slate-900 text-slate-400 border-t border-slate-800 text-xs py-6 px-4 pb-24 lg:pb-6 text-center mt-auto">
+<div class="max-w-6xl mx-auto space-y-2">
+<p class="font-bold text-slate-200">MediTrack Pro — Base Documentaire des Symptômes & Solutions</p>
+<p class="text-[11px] text-slate-400">Information éducative uniquement • Ne remplace pas une consultation médicale ou psychologique.</p>
+<p class="text-slate-400 text-[11px]">Propriété exclusive et création originale de <strong>Jonathan Debuisson</strong>. Tous droits réservés.</p>
+</div>
+</footer>
+​<!-- NAVIGATION MOBILE (Alignée avec la page principale) -->
+<div class="lg:hidden fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-800 z-30 px-1 py-1.5 flex justify-around shadow-2xl">
+<a href="../index.html" class="flex flex-col items-center py-1 px-2 text-slate-400 hover:text-teal-400 font-medium text-[10px]">
+<span class="text-base">📋</span>
+<span>Tests</span>
+</a>
+<span class="flex flex-col items-center py-1 px-2 text-indigo-400 font-bold text-[10px]">
+<span class="text-base">📖</span>
+<span>Symptômes</span>
+</span>
+<a href="../index.html#synthese" onclick="openSynthesisModal()" class="flex flex-col items-center py-1 px-2 text-slate-400 hover:text-teal-400 font-medium text-[10px]">
+<span class="text-base">📊</span>
+<span>Synthèse</span>
+</a>
+<a href="../index.html#journal" onclick="openJournalModal()" class="flex flex-col items-center py-1 px-2 text-slate-400 hover:text-teal-400 font-medium text-[10px]">
+<span class="text-base">📓</span>
+<span>Journal</span>
+</a>
+<a href="../index.html#export" onclick="openExportModal()" class="flex flex-col items-center py-1 px-2 text-slate-400 hover:text-teal-400 font-medium text-[10px]">
+<span class="text-base">📁</span>
+<span>Rapport</span>
+</a>
+<a href="../index.html#ressources" onclick="openResourcesModal()" class="flex flex-col items-center py-1 px-2 text-slate-400 hover:text-teal-400 font-medium text-[10px]">
+<span class="text-base">🔗</span>
+<span>Urgences</span>
+</a>
+</div>
+​<script>
+const SYMPTOMS_DATA = [
+{
+id: 'dysfonction_executive',
+category: 'neuro',
+categoryLabel: '🧠 Fonctions Exécutives & TDAH',
+title: 'Procrastination & Paralysie Exécutive',
+shortDesc: 'Difficulté majeure à initier une tâche malgré la volonté d’agir, souvent liée à un déficit de régulation dopaminergique.',
+relatedTests: 'ASRS-v1.1 (TDAH Adulte) • WURS-25',
+specialist: 'Neuropsychologue, Psychiatre ou Coach spécialisé TDAH',
+explanation: "Contrairement à la paresse, la paralysie exécutive est un blocage neurologique de l'initiation de l'action. Le cortex préfrontal peine à prioriser les étapes et à mobiliser l'élan motivationnel lorsque la tâche manque de stimulation immédiate, de nouveauté ou d'urgence.",
+nonMedSolutions: [
+"<strong>Règle des 2 minutes & micro-découpage :</strong> Fractionner l'action jusqu'à une étape ridicule (ex: « ouvrir le fichier » plutôt que « rédiger le rapport »).",
+"<strong>Body Doubling (Doublure d'action) :</strong> Travailler en présence silencieuse d'une autre personne (en physique ou en visioconférence) pour ancrer l'attention.",
+"<strong>Externalisation visuelle :</strong> Utiliser des minuteurs visuels (Time Timer) et des tableaux Kanban visibles plutôt que des listes cachées.",
+"<strong>Thérapie Cognitivo-Comportementale (TCC) :</strong> Restructuration des schémas de perfectionnisme qui aggravent le blocage."
+],
+medSolutions: [
+"Lorsqu'un TDAH est diagnostiqué par un psychiatre ou neurologue, les traitements psychostimulants (ex: méthylphénidate, lisdexamfétamine) ou non stimulants (atomoxétine) améliorent la disponibilité des neurotransmetteurs (dopamine/noradrénaline) et facilitent l'initiation des tâches."
+],
+redFlags: "Si le blocage s'accompagne d'une perte totale d'élan vital, d'idées noires ou d'une incapacité à assurer les gestes essentiels du quotidien (alimentation, hygiène), consultez rapidement un médecin pour évaluer un épisode dépressif sévère."
+},
+{
+id: 'distractibilite_inattention',
+category: 'neuro',
+categoryLabel: '🧠 Fonctions Exécutives & TDAH',
+title: 'Distractibilité & Vagabondage Mental (Inattention)',
+shortDesc: 'Difficulté à filtrer les stimuli internes et externes, perte du fil d’une conversation ou oublis fréquents.',
+relatedTests: 'ASRS-v1.1 • IMT (Mémoire de Travail)',
+specialist: 'Neuropsychologue (bilan attentionnel) ou Psychiatre',
+explanation: "Le cerveau peine à inhiber les informations non pertinentes (bruits de fond, pensées associatives). L'attention n'est pas absente mais instable : elle peut décrocher sur une tâche routinière et basculer en « hyperfocus » sur un sujet captivant.",
+nonMedSolutions: [
+"<strong>Hygiène de l'environnement :</strong> Casque à réduction de bruit active, bruit brun/blanc, mode « Ne pas déranger » strict sur le téléphone.",
+"<strong>Carnet de décharge mentale :</strong> Garder un bloc-notes à portée de main pour noter immédiatement les idées parasites sans quitter la tâche en cours.",
+"<strong>Cycles courts (Pomodoro adapté) :</strong> Alterner 20 à 25 minutes de concentration avec 5 minutes de mouvement physique."
+],
+medSolutions: [
+"Prise en charge pharmacologique sur prescription spécialisée après bilan clinique complet, complétée si besoin par une remédiation cognitive."
+],
+redFlags: "Une baisse brutale et récente de la concentration chez un adulte sans antécédent doit faire rechercher une cause somatique (carence en fer/B12, trouble thyroïdien, apnée du sommeil ou surmenage)."
+},
+{
+id: 'hyperactivite_mentale',
+category: 'sensory',
+categoryLabel: '⚡ Sensorialité & Camouflage (TSA/HPI)',
+title: 'Pensée en Arborescence & Rumination Rapide',
+shortDesc: 'Flux continu d’idées qui s’embranchement sans pause, difficulté à « éteindre » son cerveau le soir.',
+relatedTests: 'Échelle HPI • Dyssynchronie (2e) • ASRS-v1.1',
+specialist: 'Psychologue clinicien spécialisé HPI / Neurodiversité',
+explanation: "Caractérisée par une vitesse associative élevée et une hyper-connectivité cognitive, cette agitation interne peut être stimulante en journée mais devient épuisante lorsqu'elle empêche le repos mental ou génère des scénarios anxieux en cascade.",
+nonMedSolutions: [
+"<strong>Décharge écrite avant le coucher (Brain Dump) :</strong> Écrire sur papier toutes les pensées et tâches du lendemain 1 heure avant de dormir.",
+"<strong>Ancrage somatique :</strong> Privilégier les techniques corporelles (cohérence cardiaque, relaxation musculaire progressive de Jacobson) plutôt que la méditation silencieuse pure, souvent difficile au début.",
+"<strong>Canalisation créative ou intellectuelle :</strong> Maintenir un projet stimulant pour nourrir le besoin de complexité cognitive."
+],
+medSolutions: [
+"Aucun médicament ne « traite » un haut potentiel, mais si l'agitation mentale relève d'un TDAH ou d'un trouble anxieux comorbide, un traitement ciblé prescrit par un médecin peut apaiser le bruit de fond mental."
+],
+redFlags: "Si l'accélération des pensées s'accompagne d'une réduction drastique du besoin de sommeil (dormir 2-3h sans fatigue), d'euphorie inhabituelle ou de dépenses impulsives, consultez un psychiatre (diagnostic différentiel d'hypomanie / MDQ)."
+},
+{
+id: 'surcharge_sensorielle',
+category: 'sensory',
+categoryLabel: '⚡ Sensorialité & Camouflage (TSA/HPI)',
+title: 'Hypersensibilité & Surcharge Sensorielle',
+shortDesc: 'Intolérance aux bruits multiples, néons, foules ou textures, menant à l’irritabilité ou à l’épuisement.',
+relatedTests: 'AQ-10 (Spectre Autistique) • CAT-Q (Masquage)',
+specialist: 'Neuropsychologue, Ergothérapeute ou Centre de Référence Autisme (CRA)',
+explanation: "Le système nerveux traite les signaux sensoriels avec un filtre atténué. L'accumulation de stimulations (open-space, supermarché, conversations croisées) sature la capacité de traitement et déclenche une réaction de stress aigu (meltdown ou shutdown).",
+nonMedSolutions: [
+"<strong>Protections auditives discrètes :</strong> Bouchons filtrants (type Loop ou sur mesure) pour atténuer les fréquences agressives sans isoler complètement.",
+"<strong>Sas de décompression sensorielle :</strong> Prévoir 15 à 30 minutes au calme et dans la pénombre après une journée sociale ou professionnelle.",
+"<strong>Adaptation de l'éclairage :</strong> Privilégier les lumières chaudes indirectes et les filtres anti-lumière bleue sur écrans."
+],
+medSolutions: [
+"Il n'existe pas de traitement médicamenteux spécifique de l'hypersensibilité sensorielle ; l'approche repose essentiellement sur les aménagements environnementaux et l'ergothérapie sensorielle."
+],
+redFlags: "En cas de migraines ophtalmiques fréquentes, d'acouphènes soudains ou de vertiges associés, un bilan ORL ou neurologique est indispensable."
+},
+{
+id: 'epuisement_masquage',
+category: 'sensory',
+categoryLabel: '⚡ Sensorialité & Camouflage (TSA/HPI)',
+title: 'Épuisement lié au Camouflage Social (Masking)',
+shortDesc: 'Fatigue intense après les interactions sociales due à l’effort constant pour « paraître neurotypique ».',
+relatedTests: 'CAT-Q (Camouflage) • AQ-10 • MBI Burnout',
+specialist: 'Psychologue clinicien formé aux profils TSA/TDAH adultes',
+explanation: "Le camouflage consiste à imiter consciemment les codes sociaux, contrôler son regard, retenir ses mouvements d'autorégulation (stimming) et préparer des scripts conversationnels. Cette hyper-vigilance cognitive consomme une énergie considérable.",
+nonMedSolutions: [
+"<strong>Identifier ses espaces « sans masque » :</strong> Repérer les personnes et lieux sûrs où relâcher le contrôle postural et conversationnel.",
+"<strong>Autoriser les mouvements d'autorégulation discrets :</strong> Utiliser un objet sensoriel (fidget) en réunion pour libérer la tension sans épuiser l'attention.",
+"<strong>Planifier la récupération sociale :</strong> Éviter d'enchaîner deux événements sociaux majeurs sans temps de repos intermédiaire."
+],
+medSolutions: [
+"Prise en charge médicale uniquement en cas de complications associées (épuisement dépressif, troubles anxieux sévères ou troubles du sommeil)."
+],
+redFlags: "Une perte progressive des compétences quotidiennes, un mutisme réactionnel ou une fatigue que le repos ne soulage plus évoquent un burnout autistique ou professionnel nécessitant un arrêt et un suivi médical."
+},
+{
+id: 'rsd_rejet',
+category: 'emotion',
+categoryLabel: '💬 Régulation Émotionnelle & Anxiété',
+title: 'Sensibilité Dysphorique au Rejet (RSD)',
+shortDesc: 'Douleur émotionnelle fulgurante face à une critique, un silence ou le sentiment de décevoir autrui.',
+relatedTests: 'Échelle RSD • MSI-BPD • ECR-R Attachement',
+specialist: 'Psychologue (TCC, Thérapie des Schémas ou TCD)',
+explanation: "Très fréquente dans le TDAH et les profils hypersensibles, la RSD provoque une réponse émotionnelle quasi instantanée et disproportionnée face à un rejet réel ou perçu, entraînant soit un repli brutal, soit une suradaptation (people-pleasing).",
+nonMedSolutions: [
+"<strong>Règle de temporisation (24h) :</strong> Ne jamais répondre à chaud à un message perçu comme critique ; laisser retomber le pic émotionnel.",
+"<strong>Vérification des faits (TCC) :</strong> Distinguer l'interprétation automatique (« il est fâché contre moi ») des hypothèses neutres (« il est occupé »).",
+"<strong>Travail sur les limites :</strong> Apprendre à dire non progressivement pour réduire l'épuisement lié au people-pleasing."
+],
+medSolutions: [
+"Dans le cadre d'un TDAH avéré, certains traitements de fond (stimulants ou alpha-2 agonistes comme la guanfacine sur avis spécialisé) peuvent atténuer la réactivité émotionnelle impulsive."
+],
+redFlags: "Si la peur de l'abandon s'accompagne de gestes auto-agressifs ou de crises d'angoisse aiguës, un accompagnement psychothérapeutique structuré (type Thérapie Comportementale Dialectique) et psychiatrique est recommandé."
+},
+{
+id: 'anxiete_generalisee',
+category: 'emotion',
+categoryLabel: '💬 Régulation Émotionnelle & Anxiété',
+title: 'Anxiété Anticipatoire & Hypervigilance',
+shortDesc: 'Inquiétude permanente difficile à contrôler, tensions musculaires, palpitations et fatigue nerveuse.',
+relatedTests: 'GAD-7 (Anxiété) • SPIN-6 • PCL-5',
+specialist: 'Médecin généraliste, Psychologue TCC ou Psychiatre',
+explanation: "Le système d'alarme cérébral (amygdale) reste activé en continu, anticipant des dangers potentiels. Chez les profils neuroatypiques, l'anxiété est souvent secondaire aux oublis, aux retards ou à la peur de commettre des erreurs.",
+nonMedSolutions: [
+"<strong>Respiration physiologique (Soupir cyclique) :</strong> Deux inspirations nasales suivies d'une longue expiration lente pour activer le système nerveux parasympathique.",
+"<strong>Créneau d'inquiétude programmé :</strong> Réserver 15 minutes fixes en fin d'après-midi pour noter ses préoccupations et libérer le reste de la journée.",
+"<strong>Activité physique aérobie régulière :</strong> 30 minutes de marche rapide ou cardio 3 fois par semaine réduisent significativement le cortisol basal."
+],
+medSolutions: [
+"En cas d'anxiété modérée à sévère persistante, un médecin peut proposer un traitement de fond (ISRS/IRSN) combiné à une psychothérapie. Les anxiolytiques (benzodiazépines) doivent rester strictement ponctuels."
+],
+redFlags: "Douleurs thoraciques oppressantes, essoufflement aigu ou malaise nécessitent d'écarter d'abord toute cause cardiologique en urgence."
+},
+{
+id: 'insomnie_retard_phase',
+category: 'sleep',
+categoryLabel: '🌙 Sommeil & Énergie',
+title: 'Insomnie d’Endormissement & Retard de Phase',
+shortDesc: 'Regain d’énergie tard le soir, difficulté à s’endormir avant 1h-2h du matin et réveil difficile.',
+relatedTests: 'ISI (Insomnie) • Échelle d’Epworth',
+specialist: 'Médecin généraliste, Centre du Sommeil ou Neurologue',
+explanation: "Le syndrome de retard de phase circadienne est particulièrement fréquent chez les personnes TDAH ou HPI : la sécrétion naturelle de mélatonine est décalée de plusieurs heures par rapport aux horaires sociaux classiques.",
+nonMedSolutions: [
+"<strong>Luminothérapie matinale :</strong> S'exposer à la lumière naturelle du jour (ou lampe 10 000 lux) dès les 30 premières minutes après le réveil pour recaler l'horloge biologique.",
+"<strong>Contrôle des stimuli lumineux le soir :</strong> Réduire intensément la luminosité ambiante 90 minutes avant le coucher.",
+"<strong>Régularité de l'heure de lever :</strong> Maintenir une heure de réveil stable (même le week-end, à +/- 45 min) pour consolider la pression de sommeil."
+],
+medSolutions: [
+"La mélatonine à libération immédiate ou prolongée (sur conseil médical ou pharmaceutique pour le dosage et l'heure précise de prise) aide à resynchroniser le rythme circadien."
+],
+redFlags: "Ronflements sonores, pauses respiratoires observées la nuit ou somnolence diurne dangereuse au volant nécessitent une polysomnographie en laboratoire du sommeil."
+},
+{
+id: 'fatigue_chronique_burnout',
+category: 'sleep',
+categoryLabel: '🌙 Sommeil & Énergie',
+title: 'Épuisement Cognitif & Burnout',
+shortDesc: 'Sensation de batterie vide dès le matin, perte de motivation, cynisme et hypersensibilité au stress.',
+relatedTests: 'MBI-GS (Burnout) • PHQ-9 (Dépression)',
+specialist: 'Médecin généraliste (DMG), Médecin du travail, Psychologue',
+explanation: "L'épuisement survient lorsque la dépense énergétique (compensation cognitive, surcharge de travail, stress émotionnel) dépasse durablement les capacités de récupération neurobiologique.",
+nonMedSolutions: [
+"<strong>Repos cognitif vrai :</strong> Remplacer le défilement sur écrans (qui continue de stimuler le cerveau) par des activités sans sollicitation visuelle ou décisionnelle.",
+"<strong>Allègement temporaire de la charge :</strong> Prioriser uniquement les tâches vitales et déléguer ou reporter le reste.",
+"<strong>Bilan biologique préventif :</strong> Faire vérifier bilan sanguin complet (ferritine, vitamine D, B12, TSH) auprès de son médecin traitant."
+],
+medSolutions: [
+"Un arrêt de travail temporaire prescrit par le médecin traitant permet souvent d'enrayer l'effondrement avant qu'il ne bascule vers une dépression caractérisée."
+],
+redFlags: "En cas de détresse aiguë, de sentiment de désespoir profond ou d'idées suicidaires, contactez immédiatement le 112 ou le Centre de Prévention du Suicide (0800 32 123 en Belgique)."
+},
+{
+id: 'alexithymie_dissociation',
+category: 'emotion',
+categoryLabel: '💬 Régulation Émotionnelle & Anxiété',
+title: 'Difficulté à Identifier ses Émotions & Coupure (Dissociation)',
+shortDesc: 'Sensation d’être en pilote automatique, déconnecté de son corps ou incapable de nommer ce que l’on ressent.',
+relatedTests: 'TAS-12 (Alexithymie) • DES-B (Dissociation)',
+specialist: 'Psychologue clinicien (EMDR, Thérapie Somatique)',
+explanation: "L'alexithymie correspond à une difficulté de traduction entre les signaux corporels et le langage émotionnel. La dissociation légère est quant à elle un mécanisme de protection du cerveau face à une surcharge émotionnelle ou sensorielle.",
+nonMedSolutions: [
+"<strong>Roue des émotions :</strong> Utiliser un support visuel structuré pour apprendre à relier une sensation physique (gorge serrée, chaleur) à un mot précis.",
+"<strong>Technique d'ancrage sensoriel 5-4-3-2-1 :</strong> Nommer à voix haute 5 choses vues, 4 touchées, 3 entendues, 2 senties, 1 goûtée lors d'un épisode de déconnexion.",
+"<strong>Check-in corporel programmé :</strong> Mettre une alarme 2 fois par jour pour évaluer faim, soif, fatigue et tension musculaire."
+],
+medSolutions: [
+"La prise en charge est principalement psychothérapeutique (thérapies centrées sur le trauma, EMDR, approches psycho-corporelles)."
+],
+redFlags: "Si les épisodes de déconnexion entraînent des pertes de mémoire importantes ou font suite à un traumatisme récent, consultez un psychiatre ou un psychotraumatologue."
+}
+];
+​let currentCategory = 'all';
+let currentQuery = '';
+​function filterCategory(cat) {
+currentCategory = cat;
+document.querySelectorAll('.cat-filter-btn').forEach(btn => {
+btn.classList.remove('bg-indigo-900', 'text-white');
+if (btn.id === 'cat-btn-neuro') {
+btn.classList.add('bg-indigo-50', 'text-indigo-900');
+} else {
+btn.classList.add('bg-slate-100', 'text-slate-700');
+}
+});
+const active = document.getElementById(cat-btn-${cat});
+if (active) {
+active.classList.remove('bg-slate-100', 'text-slate-700', 'bg-indigo-50', 'text-indigo-900');
+active.classList.add('bg-indigo-900', 'text-white');
+}
+renderSymptomsGrid();
+}
+​function filterSymptoms() {
+const el = document.getElementById('symptom-search-input');
+currentQuery = el ? el.value.toLowerCase().trim() : '';
+renderSymptomsGrid();
+}
+​function renderSymptomsGrid() {
+const grid = document.getElementById('symptoms-grid');
+if (!grid) return;
+grid.innerHTML = '';
+​const filtered = SYMPTOMS_DATA.filter(s => {
+const matchCat = currentCategory === 'all' || s.category === currentCategory;
+const matchText = !currentQuery ||
+s.title.toLowerCase().includes(currentQuery) ||
+s.shortDesc.toLowerCase().includes(currentQuery) ||
+s.explanation.toLowerCase().includes(currentQuery) ||
+s.relatedTests.toLowerCase().includes(currentQuery);
+return matchCat && matchText;
+});
+​if (filtered.length === 0) {
+grid.innerHTML = <div class="col-span-full py-10 text-center text-slate-400 text-xs bg-white rounded-2xl border border-slate-200">Aucune fiche symptôme ne correspond à votre recherche.</div>;
+return;
+}
+​filtered.forEach(s => {
+const card = document.createElement('div');
+card.className = "bg-white rounded-2xl p-4 sm:p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-indigo-300 transition flex flex-col justify-between group";
+card.innerHTML = <div class="space-y-2.5"> <div class="flex items-center justify-between gap-2"> <span class="text-[10px] font-bold uppercase tracking-wider text-indigo-900 bg-indigo-50 border border-indigo-100 px-2.5 py-0.5 rounded-full truncate">${s.categoryLabel}</span> <span class="text-[10px] font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded flex-shrink-0">Fiche clinique</span> </div> <h4 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-indigo-700 transition">${s.title}</h4> <p class="text-xs text-slate-600 leading-relaxed">${s.shortDesc}</p> <div class="pt-1 flex flex-wrap gap-1.5"> <span class="text-[10px] font-medium text-teal-800 bg-teal-50 border border-teal-200 px-2 py-0.5 rounded-md">📋 Tests liés : ${s.relatedTests}</span> </div> </div> <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between gap-2"> <span class="text-[11px] text-slate-500 truncate">👩‍⚕️ ${s.specialist}</span> <button onclick="openSymptomModal('${s.id}')" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs px-3.5 py-2 rounded-xl transition shadow-sm flex-shrink-0"> Lire la fiche → </button> </div>;
+grid.appendChild(card);
+});
+}
+​function openSymptomModal(id) {
+const symp = SYMPTOMS_DATA.find(s => s.id === id);
+if (!symp) return;
+​document.getElementById('modal-symp-cat').innerText = symp.categoryLabel;
+document.getElementById('modal-symp-title').innerText = symp.title;
+document.getElementById('modal-symp-test-hint').innerText = Tests associés : ${symp.relatedTests};
+​const nonMedList = symp.nonMedSolutions.map(item => <li class="flex items-start gap-2"><span class="text-indigo-600 font-bold mt-0.5">✓</span><span>${item}</span></li>).join('');
+const medList = symp.medSolutions.map(item => <p>${item}</p>).join('');
+​document.getElementById('modal-symp-body').innerHTML = `
+<div class="p-4 rounded-xl bg-indigo-50/70 border border-indigo-200 space-y-1.5">
+<h4 class="font-bold text-indigo-950 text-xs sm:text-sm uppercase tracking-wide">1. Comprendre le mécanisme clinique</h4>
+<p class="text-slate-800">${symp.explanation}</p>
+</div>
+​<div class="p-4 rounded-xl bg-white border border-slate-200 space-y-2.5 shadow-sm">
+<h4 class="font-bold text-slate-900 text-xs sm:text-sm uppercase tracking-wide flex items-center gap-1.5">
+<span>🌿</span><span>2. Solutions & Stratégies Non Médicamenteuses</span>
+</h4>
+<ul class="space-y-2 text-slate-700">${nonMedList}</ul>
+</div>
+​<div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
+<h4 class="font-bold text-slate-900 text-xs sm:text-sm uppercase tracking-wide flex items-center gap-1.5">
+<span>⚕️</span><span>3. Approches Médicamenteuses & Suivi Médical</span>
+</h4>
+<div class="text-slate-700">${medList}</div>
+</div>
+​<div class="p-3.5 rounded-xl bg-amber-50 border border-amber-300 space-y-1">
+<h4 class="font-bold text-amber-950 text-xs uppercase tracking-wide flex items-center gap-1.5">
+<span>⚠️</span><span>4. Signes d'alerte & Orientation Praticien</span>
+</h4>
+<p class="text-amber-900 text-xs">${symp.redFlags}</p>
+<p class="text-amber-950 font-semibold text-xs pt-1">Interlocuteurs recommandés : ${symp.specialist}</p>
+</div>
+`;
+​document.getElementById('symptom-detail-modal').classList.remove('hidden');
+}
+​function closeSymptomModal() {
+document.getElementById('symptom-detail-modal').classList.add('hidden');
+}
+​window.addEventListener('DOMContentLoaded', () => {
+renderSymptomsGrid();
+});
+</script>
 </body>
 </html>
