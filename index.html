@@ -167,9 +167,16 @@
                 <button onclick="switchTab('history')" id="nav-btn-history" class="nav-tab px-3 py-1.5 rounded-lg text-xs font-semibold transition-all text-slate-300 hover:text-white hover:bg-slate-800 flex items-center gap-1.5">
                     📂 Mon Dossier <span id="badge-count" class="bg-teal-500 text-slate-950 font-bold text-[10px] px-1.5 py-0.2 rounded-full hidden">0</span>
                 </button>
+                <a href="symptomes/index.html" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all text-indigo-200 bg-indigo-950/80 hover:bg-indigo-900 border border-indigo-500/40 flex items-center gap-1.5 ml-1">
+                    📖 Symptômes & Solutions
+                </a>
             </nav>
 
             <div class="flex items-center space-x-2 flex-shrink-0">
+                <a href="symptomes/index.html" title="Guide des symptômes et solutions" class="lg:hidden bg-indigo-600/90 hover:bg-indigo-500 text-white font-semibold text-xs px-2.5 py-2 rounded-xl transition shadow flex items-center gap-1 border border-indigo-400/30">
+                    <span>📖</span>
+                    <span class="hidden sm:inline">Symptômes</span>
+                </a>
                 <button onclick="promptPatientDetails('print')" title="Accéder à la version imprimable" class="bg-teal-600 hover:bg-teal-500 text-white font-semibold text-xs px-3.5 py-2 rounded-xl transition shadow flex items-center gap-1.5">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
                     <span class="hidden sm:inline">Version Imprimable</span>
@@ -482,10 +489,14 @@
             <span class="text-base">🇧🇪</span>
             <span>Annuaire BE</span>
         </button>
-        <button onclick="switchTab('history')" id="mob-nav-history" class="flex flex-col items-center py-1 px-3 text-slate-400 font-medium text-[10px]">
+        <button onclick="switchTab('history')" id="mob-nav-history" class="flex flex-col items-center py-1 px-2 text-slate-400 font-medium text-[10px]">
             <span class="text-base">📂</span>
             <span>Dossier</span>
         </button>
+        <a href="symptomes/index.html" class="flex flex-col items-center py-1 px-2 text-indigo-300 hover:text-indigo-200 font-medium text-[10px]">
+            <span class="text-base">📖</span>
+            <span>Symptômes</span>
+        </a>
     </div>
 
     <!-- NOUVELLE VUE : PAGE INTERMÉDIAIRE IMPRIMABLE PROPRE, PROFESSIONNELLE ET COMPACTE (SANS EMOJIS) -->
