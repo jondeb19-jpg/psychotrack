@@ -186,8 +186,9 @@
     <!-- MAIN CONTAINER -->
     <main class="no-print flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 py-5 pb-44 lg:pb-12 min-w-0">
 
-        <!-- TAB 1: PARCOURS GUIDÉ & CATALOGUE DE TESTS -->
-        <section id="tab-tests" class="tab-content space-y-5 min-w-0">
+        <!-- TAB 1: PARCOURS GUIDÉ & CATALOGUE DE TESTS (Ancre id="parcours") -->
+        <section id="parcours" class="tab-content space-y-5 min-w-0">
+            <div id="tab-tests" class="space-y-5 min-w-0">
 
             <!-- BANNIÈRE D'ACCUEIL ORIENTATION PATIENT (VULGARISÉE & RASSURANTE) -->
             <div class="bg-gradient-to-br from-slate-900 via-slate-800 to-teal-950 text-white p-5 sm:p-6 rounded-2xl shadow-md border border-slate-700 space-y-4">
@@ -295,10 +296,12 @@
                     <span>Emplacement réservé (Format Multiplex)</span>
                 </div>
             </div>
+            </div>
         </section>
 
-        <!-- TAB 2: MON ORIENTATION & PLAN D'ACTION -->
-        <section id="tab-analysis" class="tab-content hidden space-y-5 min-w-0">
+        <!-- TAB 2: MON ORIENTATION & PLAN D'ACTION (Ancre id="orientation") -->
+        <section id="orientation" class="tab-content hidden space-y-5 min-w-0">
+            <div id="tab-analysis" class="space-y-5 min-w-0">
             <div class="bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-slate-200 min-w-0">
                 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 border-b border-slate-100 pb-4 mb-5">
                     <div>
@@ -318,10 +321,12 @@
                 </div>
                 <div id="cross-analysis-content" class="space-y-6 min-w-0"></div>
             </div>
+            </div>
         </section>
 
-        <!-- TAB 3: PARCOURS DE SOIN BELGE & ANNUAIRE OFFICIEL -->
-        <section id="tab-roadmap" class="tab-content hidden space-y-5 min-w-0">
+        <!-- TAB 3: PARCOURS DE SOIN BELGE & ANNUAIRE OFFICIEL (Ancre id="annuaire") -->
+        <section id="annuaire" class="tab-content hidden space-y-5 min-w-0">
+            <div id="tab-roadmap" class="space-y-5 min-w-0">
             <!-- GUIDE PARCOURS DE SOIN & REMBOURSEMENTS BELGIQUE -->
             <div class="bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-slate-200 space-y-5 min-w-0">
                 <div class="border-b border-slate-100 pb-3">
@@ -415,10 +420,12 @@
                 <!-- LISTE DES PRATICIENS / STRUCTURES -->
                 <div id="belgian-directory-grid" class="grid grid-cols-1 md:grid-cols-2 gap-3.5"></div>
             </div>
+            </div>
         </section>
 
-        <!-- TAB 4: HISTORIQUE, SUIVI LONGITUDINAL & DOSSIER LOCAL -->
-        <section id="tab-history" class="tab-content hidden space-y-5 min-w-0">
+        <!-- TAB 4: HISTORIQUE, SUIVI LONGITUDINAL & DOSSIER LOCAL (Ancre id="history") -->
+        <section id="history" class="tab-content hidden space-y-5 min-w-0">
+            <div id="tab-history" class="space-y-5 min-w-0">
             <div class="bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-slate-200 min-w-0">
                 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 border-b border-slate-100 pb-4 mb-5">
                     <div>
@@ -455,6 +462,7 @@
 
                 <!-- CONTENEUR DYNAMIQUE DES RÉSULTATS GROUPÉS DANS LE DOSSIER -->
                 <div id="history-list-container" class="space-y-6 min-w-0"></div>
+            </div>
             </div>
         </section>
     </main>
@@ -1365,7 +1373,7 @@
                     { text: "5. Je doute de l'utilité réelle de ce que je fais au quotidien." },
                     { text: "6. J'ai le sentiment d'avoir perdu mon efficacité et ma créativité." },
                     { text: "7. Je m'isole de mes collègues ou de mon entourage professionnel." },
-                    { text: "8. Épuisement physique persistant malgré les moments de repos." },
+                    { text: "8. Épuisement physique persistent malgré les moments de repos." },
                     { text: "9. Sentiment d'accomplissement personnel en chute libre." }
                 ],
                 evaluate: function(answers) {
@@ -1719,7 +1727,7 @@
         function switchTab(tabId) {
             appState.currentTab = tabId;
             document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-            const targetTab = document.getElementById(`tab-${tabId}`);
+            const targetTab = document.getElementById(tabId === 'tests' ? 'parcours' : (tabId === 'analysis' ? 'orientation' : (tabId === 'roadmap' ? 'annuaire' : 'history')));
             if (targetTab) targetTab.classList.remove('hidden');
 
             document.querySelectorAll('.nav-tab').forEach(btn => {
@@ -2976,6 +2984,15 @@
             renderTestsGrid();
             renderSmartRecommendations();
             renderBelgianDirectory();
+
+            // Gestion automatique de l'ancre URL (ex: #history, #annuaire, #orientation, #parcours)
+            const hash = window.location.hash.replace('#', '');
+            if (hash) {
+                if (hash === 'history' || hash === 'dossier') switchTab('history');
+                else if (hash === 'annuaire') switchTab('roadmap');
+                else if (hash === 'orientation') switchTab('analysis');
+                else if (hash === 'parcours' || hash === 'tests') switchTab('tests');
+            }
         });
     </script>
 </body>
